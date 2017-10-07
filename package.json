@@ -1,0 +1,30 @@
+{
+  "name": "fia-proyect",
+  "version": "1.0.0",
+  "description": "Workflow para desarrollo de la web Deportes FIA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blogdopata/deporteFia.git"
+  },
+  "author": "Victor Caballero Cabrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blogdopata/deporteFia/issues"
+  },
+  "homepage": "https://github.com/blogdopata/deporteFia#readme",
+  "devDependencies": {
+    "bootstrap": "3",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,44 @@
+/* Mis Fonts :D */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+@import 'variables';
+@import 'mixins';
+
+
+
+body{
+	background-color: $color-fondo;
+	color: $color-text;
+	font-family: $font-pricipal;
+}
+
+[class*='col-']{
+	border: 1px solid blue;
+}
+
+.line{
+	height:5px;
+	background-color:$color-linea;
+}
+
+
+
+
+
+
+.test{
+
+	// width:400px;
+	// height:600px;
+	// background-color: orange;
+	// margin: 0 auto;
+
+	
+	@include tablet{
+		background-color: yellow;
+	}
+	@include desktop{
+		background-color: green;
+	}
+}
+

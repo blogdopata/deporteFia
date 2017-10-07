@@ -1,0 +1,25 @@
+/* Mis Fonts :D */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+/*Web Colors :D */
+/* Medias queries */
+/*  Mixins para los media QUERIOES */
+body {
+  background-color: #c3c3c3;
+  color: #212529;
+  font-family: "Roboto", sans-serif; }
+
+[class*='col-'] {
+  border: 1px solid blue; }
+
+.line {
+  height: 5px;
+  background-color: #7C777A; }
+
+@media only screen and (min-width: 768px) {
+  .test {
+    /*Esta directiva para agregar contenido  @content*/
+    background-color: yellow; } }
+
+@media only screen and (min-width: 1024px) {
+  .test {
+    background-color: green; } }
