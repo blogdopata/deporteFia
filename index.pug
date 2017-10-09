@@ -7,15 +7,90 @@ head
 
 	link(rel="Shortcut Icon", href="http://www.usmp.edu.pe/images/logo.ico")
 	link(rel="stylesheet", href="css/bootstrap.css")
+	link(rel="stylesheet", href="css/slider.css")
 	link(rel="stylesheet", href="css/style.css")
 	script(src="js/jquery.js")
+	script(src="js/bootstrap.js")
+	script(src="js/slider.min.js")
+	script(src="js/configSlider.js")
 	script(src="js/myJS.js")
 	title Deportes FIA
 
 body
-	.line 
-	.container-fluid
+	.line  
+	header.container
 		.row
-			.col-md-12
-				h1.test sere un title
-	
+			figure.col-md-6.logo
+				img(src='images/logo.png', alt='logo fia')
+			form.col-md-3.col-md-offset-3.form(action='')
+				input(type='text', placeholder='Buscar')
+
+	.navbar-wrapper
+		.container.containerFix
+			nav.navbar
+				.container
+					.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+					#navbar.navbar-collapse.collapse
+						ul.nav.navbar-nav
+							li.active
+								a(href='#') NOSOTROS
+							
+							li
+								a(href='#') INTERFACULTADES
+							li.dropdown
+								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+									| LIGAS
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href='#') Profesionales
+									li
+										a(href='#') Universitarios
+							li.dropdown
+								a.dropdown-toggle.active(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+									| EVENTOS
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href='#') Ciencias Administrativas  y RRHH
+									li
+										a(href='#') Ciencias de la Comunicación, Turimos y Hotelería
+									li
+										a(href='#') Ciencias Contables, Económicas y Financieras
+									li
+										a(href='#') Derecho
+									li
+										a(href='#') Ingeniería y Arquitectura
+									li
+										a(href='#') Obstetrica y Enfermería
+									li
+										a(href='#') Medicina Humana
+									li
+										a(href='#') Odontología				 
+#myCarousel.carousel.slide(data-ride='carousel')
+	// Indicators
+	ol.carousel-indicators
+		li.active(data-target='#myCarousel', data-slide-to='0')
+		li(data-target='#myCarousel', data-slide-to='1')
+		
+	// Wrapper for slides
+	.carousel-inner(role='listbox')
+		.item.active
+			img.img-responsive(src='http://createtalentsandmodels.com/wp-content/uploads/2016/03/createtalentsandmodel_banner_1.jpg', alt='Chania', style='width:100%; height:45vh')
+		.item
+			img.img-responsive(src='http://weddingplannershub.com/vendor/bower/wedding/branch_images/LtpmzAGTBWcxaoV_fMhT2PWFmgOZHPtd.jpg', alt='Chania', style='width:100%; height:45vh')
+	// Left and right controls
+	a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+		span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+		span.sr-only Previous
+	a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+		span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+		span.sr-only Next	
+		
+
+

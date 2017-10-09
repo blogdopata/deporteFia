@@ -7,7 +7,7 @@
 
 
 body{
-	background-color: $color-fondo;
+	background-color: white;
 	color: $color-text;
 	font-family: $font-pricipal;
 }
@@ -20,25 +20,32 @@ body{
 	height:5px;
 	background-color:$color-linea;
 }
+.row{
+	border:1px solid $color-row;
+}
+.form{
+	height:120px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+input[type="text"]{
+	padding: 2px 10px;
+	font-style: italic; 
+}
+
+@import 'menu';
 
 
 
 
-
-
-.test{
-
-	// width:400px;
-	// height:600px;
-	// background-color: orange;
-	// margin: 0 auto;
-
-	
+/*.test{
 	@include tablet{
 		background-color: yellow;
 	}
 	@include desktop{
 		background-color: green;
 	}
-}
+}*/
 
