@@ -4,25 +4,32 @@
 @import 'variables';
 @import 'mixins';
 
-
+/*
+Extra small devices Phones (<768px)	
+Small devices Tablets (≥768px)
+Medium devices Desktops (≥992px)	
+Large devices Desktops (≥1200px)
+*/
 
 body{
 	background-color: white;
 	color: $color-text;
 	font-family: $font-pricipal;
 }
-
-[class*='col-']{
+/*
+ [class*='col-']{
 	border: 1px solid blue;
-}
-
+ }
+*/
 .line{
 	height:5px;
 	background-color:$color-linea;
 }
+/*
 .row{
 	border:1px solid $color-row;
 }
+*/
 .form{
 	height:120px;
 	display:flex;
@@ -33,6 +40,40 @@ body{
 input[type="text"]{
 	padding: 2px 10px;
 	font-style: italic; 
+}
+img.line-color{
+	width:100%;
+	vertical-align:top;
+}
+.sP{
+	padding:0;
+	margin-top: 0px;
+}
+.fotos_borde img{
+	margin:20px;
+	
+}
+.video{
+	margin-top:20px;
+}
+.submenu li{
+	display:inline-block;
+	margin: 5px 30px;
+	font-size: 20px;
+}
+.footerP{
+	background-color:  #891531;
+	color :white;
+	border:1px solid yellow;
+	.col-md-6{
+		border: 1px solid yellow;
+		.footer--texto{
+			text-align: center;
+			padding:10px 0;
+			margin:0;
+			font-style: italic;
+		}
+	}
 }
 
 @import 'menu';

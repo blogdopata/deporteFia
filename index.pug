@@ -9,22 +9,24 @@ head
 	link(rel="stylesheet", href="css/bootstrap.css")
 	link(rel="stylesheet", href="css/slider.css")
 	link(rel="stylesheet", href="css/style.css")
+	link(rel="shortcut icon", href="images/logo.ico")
 	script(src="js/jquery.js")
 	script(src="js/bootstrap.js")
-	script(src="js/slider.min.js")
-	script(src="js/configSlider.js")
 	script(src="js/myJS.js")
 	title Deportes FIA
 
 body
-	.line  
+	.line 
+<!-- Cabecera --> 
 	header.container
 		.row
 			figure.col-md-6.logo
 				img(src='images/logo.png', alt='logo fia')
 			form.col-md-3.col-md-offset-3.form(action='')
 				input(type='text', placeholder='Buscar')
+<!-- FIN Cabecera --> 
 
+<!--  INICIO MENU --> 
 	.navbar-wrapper
 		.container.containerFix
 			nav.navbar
@@ -71,26 +73,111 @@ body
 									li
 										a(href='#') Medicina Humana
 									li
-										a(href='#') Odontología				 
-#myCarousel.carousel.slide(data-ride='carousel')
-	// Indicators
-	ol.carousel-indicators
-		li.active(data-target='#myCarousel', data-slide-to='0')
-		li(data-target='#myCarousel', data-slide-to='1')
-		
-	// Wrapper for slides
-	.carousel-inner(role='listbox')
-		.item.active
-			img.img-responsive(src='http://createtalentsandmodels.com/wp-content/uploads/2016/03/createtalentsandmodel_banner_1.jpg', alt='Chania', style='width:100%; height:45vh')
-		.item
-			img.img-responsive(src='http://weddingplannershub.com/vendor/bower/wedding/branch_images/LtpmzAGTBWcxaoV_fMhT2PWFmgOZHPtd.jpg', alt='Chania', style='width:100%; height:45vh')
-	// Left and right controls
-	a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-		span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-		span.sr-only Previous
-	a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-		span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-		span.sr-only Next	
-		
+										a(href='#') Odontología
+<!-- FIN  MENU --> 
+<!-- SLIDER -->
+
+	#myCarousel.carousel.slide(data-ride='carousel')
+		// Indicators
+		ol.carousel-indicators
+			li.active(data-target='#myCarousel', data-slide-to='0')
+			li(data-target='#myCarousel', data-slide-to='1')
+			
+		// Wrapper for slides
+		.carousel-inner(role='listbox')
+			.item.active
+				img.img-responsive(src='http://createtalentsandmodels.com/wp-content/uploads/2016/03/createtalentsandmodel_banner_1.jpg', alt='Chania', style='width:100%; height:35vh')
+			.item
+				img.img-responsive(src='http://weddingplannershub.com/vendor/bower/wedding/branch_images/LtpmzAGTBWcxaoV_fMhT2PWFmgOZHPtd.jpg', alt='Chania', style='width:100%; height:35vh')
+		// Left and right controls
+		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+			span.sr-only Previous
+		a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+			span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+			span.sr-only Next
+	img.line-color(src="images/linea_colores.png", alt="Line of Colors")
+
+<!-- FIN SLIDER -->	
+
+<!-- INICIO GRID D ITEMS -->
+	section.container
+		section.row
+			// grande
+			.col-lg-6.col-md-6.col-xs-12.fotos_borde
+				.row
+					.row
+						.col-lg-6.col-md-6.col-xs-12.sP
+							// pequeñitos
+							.row
+								.col-lg-12.col-md-12.col-xs-12.sP(style='height:230px')
+									img(src='images/piernita1.png', style='margin:0;width:90%; position:absolute;z-index:-1')
+									div(style='padding:20px;width:90%;color:white;background-color:rgba(237,181,85,0.5);margin-top:45%')
+										| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										| tempor incididunt   
+										a(href='') Ver mas
+								.col-lg-12.col-md-12.col-xs-12.sP
+									img(src='images/piernita3.png', style='width:90%;margin:0;padding-top:20px')
+						.col-lg-6.col-md-12.col-xs-12.sP
+							img(src='images/nueva.png', style='margin:0;width:90%;position:absolute;z-index: -1;height:390px')
+							div(style='padding:20px;width:90%;color:white;background-color:rgba(255,0,0,0.5);margin-top:88%')
+								span(style='font-size: 13px')
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
+								a(href='') Ver mas
+					.row
+						.col-lg-12.col-md-12.col-xs-12.sP
+							img(src='images/pernita4.png', style='margin:0px;margin-top:20px;width:90%;z-index:-1;position:absolute')
+							div(style='padding:20px;width:90%;color:white;background-color:rgba(78,179,111,0.8);margin-top:40%')
+								span(style='font-size: 13px')
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
+								a(href='') Ver mas
+			// grande
+			.col-lg-6.col-md-6.col-xs-12
+				// grande- subseccion
+				.row.fotos_borde
+					.col-lg-6.col-md-6.col-xs-12
+						.col-lg-12.col-md-12.col-xs-12.sP
+							img(style='margin:0; width:100%;margin-top:20px', src='images/pernita5.png')
+						.col-lg-12.col-md-12.col-xs-12.sP
+							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+						.col-lg-12.col-md-12.col-xs-12.sP
+							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/CaBYiBORMoE', frameborder='0', allowfullscreen='')
+						.col-lg-12.col-md-12.col-xs-12.sP
+							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/mnb3sFMcuxQ', frameborder='0', allowfullscreen='')
+					.col-lg-6.col-md-6.col-xs-12.sP
+						.col-lg-12.col-md-12.col-xs-12.sP(style='height:330px')
+							img(src='images/img2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
+							div(style='padding:12px;width:100%;color:white;background-color:rgba(246,188,87,0.5);margin-top:95%')
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elitasfdefawefwf
+								a(href='#') Ver mas
+						.col-lg-12.col-md-12.col-xs-12.sP(style='height:396px;margin-top:10px;overflow:hidden')
+							img(src='images/piernita2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
+							div(style='padding:20px;width:100%;color:white;background-color:rgba(255,0,0,0.5);margin-top:110%;')
+								span   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								a(href='#') Ver mas
+<!-- FIN GRID D ITEMS -->
+	hr(style="border:1px dashed black;width:84%;")
+<!-- Menu Pie -->
+	section.container
+		.row
+			.col-md-10
+				ul.submenu(style="display:inline-blocK")
+					li
+						a(href="#") Contacto
+					li
+						a(href="#") Acerca de Nosotros
+					li
+						a(href="#") Preguntas Frencuentes
+					li
+						a(href="#") Enlaces
+<!-- Fin Menu Pie -->
+
+<!-- footer -->
+	footer.container-fluid.footerP
+		.row
+			.col-md-6.col-md-offset-3 
+				p.footer--texto Universidad San Martin de Porres - Todos los Derechos Reservados
 
 
+
+<!-- FIN GRID D ITEMS -->
