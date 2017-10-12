@@ -2,8 +2,8 @@
 
 
 /*  Mixins para los media QUERIOES */
-@mixin desktop {
-	@media only screen and (min-width:#{$desktop}){
+@mixin desktop-lg {
+	@media only screen and (min-width:#{$desktop-lg}){
 		@content;
 	}
 }

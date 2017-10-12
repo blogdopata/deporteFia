@@ -104,67 +104,47 @@ body
 
 <!-- FIN SLIDER -->	
 
-<!-- INICIO GRID D ITEMS -->
-	section.container.gridPics
-		section.row
-			// grande
-			.col-lg-6.col-md-6.col-xs-12.fotos_borde
-				.row
-					.row
-						.col-lg-6.col-md-6.col-xs-12.sP
-							// pequeñitos
-							.row
-								.col-lg-12.col-md-12.col-xs-12.sP(style='height:230px')
-									img(src='images/piernita1.png', style='margin:0;width:90%; position:absolute;z-index:-1')
-									div(style='padding:20px;width:90%;color:white;background-color:rgba(237,181,85,0.5);margin-top:45%')
-										| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										| tempor incididunt   
-										a(href='') Ver mas
-								.col-lg-12.col-md-12.col-xs-12.sP
-									img(src='images/piernita3.png', style='width:90%;margin:0;padding-top:20px')
-						.col-lg-6.col-md-12.col-xs-12.sP
-							img(src='images/nueva.png', style='margin:0;width:90%;position:absolute;z-index: -1;height:390px')
-							div(style='padding:20px;width:90%;color:white;background-color:rgba(255,0,0,0.5);margin-top:88%')
-								span(style='font-size: 13px')
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
-								a(href='') Ver mas
-					.row
-						.col-lg-12.col-md-12.col-xs-12.sP
-							img(src='images/pernita4.png', style='margin:0px;margin-top:20px;width:95%;z-index:-1;position:absolute')
-							div(style='padding:20px;width:95%;color:white;background-color:rgba(78,179,111,0.8);margin-top:40%')
-								span(style='font-size: 13px')
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
-								a(href='') Ver mas
-			// grande
-			.col-lg-6.col-md-6.col-xs-12
-				// grande- subseccion
-				.row.fotos_borde
-					.col-lg-6.col-md-6.col-xs-12
-						.col-lg-12.col-md-12.col-xs-12.sP
-							img(style='margin:0; width:100%;margin-top:20px', src='images/pernita5.png')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/CaBYiBORMoE', frameborder='0', allowfullscreen='')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/mnb3sFMcuxQ', frameborder='0', allowfullscreen='')
-					.col-lg-6.col-md-6.col-xs-12.sP
-						.col-lg-12.col-md-12.col-xs-12.sP(style='height:330px')
-							img(src='images/img2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
-							div(style='padding:12px;width:100%;color:white;background-color:rgba(246,188,87,0.5);margin-top:95%')
-								| Lorem ipsum dolor sit amet, consectetur adipisicing elitasfdefawefwf
-								a(href='#') Ver mas
-						.col-lg-12.col-md-12.col-xs-12.sP(style='height:396px;margin-top:10px;overflow:hidden')
-							img(src='images/piernita2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
-							div(style='padding:20px;width:100%;color:white;background-color:rgba(255,0,0,0.5);margin-top:110%;')
-								span   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								a(href='#') Ver mas
-<!-- FIN GRID D ITEMS -->
+<!-- INICIO Contenido -->
+	section.container.contenido
+		div.row
+			div.col-md-9
+				h2.title-h2--izq ¿Quienes Somos?
+				p.textoG La Universidad de San Martín de Porres promueve la práctica del deporte y recreación como factores educativos adicionales a la formación y desarrollo de los alumnos.
+				h2.subtitle-h2 Misión
+
+				p.textoG Fomentar la práctica del deporte, la recreación, y la utilización del ocio productivo, mediante actividades lúdicas de fácil participación en la Universidad, como medio de integración y conservación de la salud física y mental.
+				
+				h2.subtitle-h2 Visión
+				p.textoG Posicionarnos como la universidad líder en la promoción y desarrollo de la práctica deportiva.
+
+				h2.subtitle-h2 Valores
+				ul.valores
+					li Respeto
+					li Responsabilidad
+					li Integridad 
+					li Liderazgo
+					li Trabajo en equipo
+
+			div.col-md-3
+				h2.title-h2--der Últimas Noticias
+				div.noticias-general
+					p texto Random  texto Random  texto Random 
+					p texto Random  texto Random  texto Random 
+					p texto Random  texto Random  texto Random 
+					p texto Random  texto Random  texto Random 
+				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+				
+				h3.subtitle-h3 Calendario Deportivo
+
+		
+
+
+<!-- FIN Contenido -->
 	hr.line-dashed
 <!-- Menu Pie -->
 	section.container
 		.row
-			.col-md-10
+			.col-md-12
 				ul.submenu
 					li
 						a(href="#")  Contacto
@@ -184,7 +164,4 @@ body
 		.row
 			.col-md-6.col-md-offset-3 
 				p.footer--texto Universidad San Martin de Porres - Todos los Derechos Reservados
-
-
-
-<!-- FIN GRID D ITEMS -->
+	

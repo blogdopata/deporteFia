@@ -30,12 +30,26 @@ body{
 	border:1px solid $color-row;
 }
 */
+.logo{
+	/*border : 1px solid red;*/
+	padding: 20px 0 0 10px;
+	text-align:center;
+	margin: 0px 0 10px 0;
+	
+	img{
+		width: 300px;
+		/*border:1px solid red;*/
+
+	}
+
+}
 .form{
 	height:120px;
-	display:flex;
+	display:none;
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
+
 }
 input[type="text"]{
 	padding: 2px 10px;
@@ -44,6 +58,10 @@ input[type="text"]{
 img.line-color{
 	width:100%;
 	vertical-align:top;
+}
+.gridPics{
+	/*border : 1px solid red;*/
+	margin-top:50px;
 }
 .sP{
 	padding:0;
@@ -56,17 +74,37 @@ img.line-color{
 .video{
 	margin-top:20px;
 }
+
+.line-dashed{
+	border:1px dashed black;width:84%;
+	margin:60px auto;
+}
+
+
+ul.submenu{
+	display:inline-block;
+}
+
+
 .submenu li{
 	display:inline-block;
 	margin: 5px 30px;
 	font-size: 20px;
+	/*border:1px solid red;*/
+}
+span.separate {
+	
+	margin-left: 35px;
+	display:none;
+
 }
 .footerP{
 	background-color:  #891531;
 	color :white;
-	border:1px solid yellow;
+	margin-top:40px;
+	/*border:1px solid yellow*;*/
 	.col-md-6{
-		border: 1px solid yellow;
+		/*border: 1px solid yellow;*/
 		.footer--texto{
 			text-align: center;
 			padding:10px 0;
@@ -76,7 +114,79 @@ img.line-color{
 	}
 }
 
+/* CONTENIDO */
+
+/* Parte izuquierda */
+.title-h2--izq{
+	background-color: #49C1BC;
+	color: white;
+	text-align:center;
+	padding:10px 0;
+	font-style:bold;
+	font-size:22px;
+}
+.textoG{
+	font-size:18px;
+	padding:8px 15px;
+	margin-bottom:0;
+	text-align:justify;
+}
+.noticias-general{
+	background-color: #D2DBDA;
+	padding: 	15px;
+}
+.subtitle-h2{
+	padding:15px 15px 10px 15px;
+	margin-top:0;
+	margin-bottom:0;
+}
+ul.valores{
+	/*border:1px solid red;*/
+	font-size:18px;
+}
+
+/* Parte derecha */
+.title-h2--der{
+	@extend .title-h2--izq;
+	background-color: #E89C3C;
+	margin-bottom: 0px ;
+}
+h3.subtitle-h3{
+	background-color: #D64B57;
+	color:white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+
+
+
+
+/* FIN CONTENIDO */
+
 @import 'menu';
+
+@include desktop-lg{
+	body{
+		background-color: white;
+	}
+	.logo img{
+		width:369px;		
+	}
+	.form{
+		height:120px;
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+	}
+	span.separate {
+	margin-left: 35px;
+	display:inline-block;
+	}
+}
+
+
 
 
 
