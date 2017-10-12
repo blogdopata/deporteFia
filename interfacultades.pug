@@ -5,6 +5,9 @@ head
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 
 	link(rel="Shortcut Icon", href="http://www.usmp.edu.pe/images/logo.ico")
+<!--	link(rel='stylesheet', type='text/css', href='css/demo.css')-->
+	link(rel='stylesheet', type='text/css', href='css/calendar.css')
+	link(rel='stylesheet', type='text/css', href='css/custom_2.css')
 	link(rel="stylesheet", href="css/bootstrap.css")
 	link(rel="stylesheet", href="css/slider.css")
 	link(rel="stylesheet", href="css/style.css")
@@ -12,6 +15,7 @@ head
 	script(src="js/jquery.js")
 	script(src="js/bootstrap.js")
 	script(src="js/myJS.js")
+	script(src='js/modernizr.custom.63321.js')
 	title Deportes FIA
 
 body
@@ -43,7 +47,7 @@ body
 								a(href='/nosotros.html') NOSOTROS
 							
 							li
-								a(href='/interfacultades.html') INTERFACULTADES
+								a(href='interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -106,67 +110,64 @@ body
 
 <!-- FIN SLIDER -->	
 
-<!-- INICIO GRID D ITEMS -->
-	section.container.gridPics
-		section.row
-			// grande
-			.col-lg-6.col-md-6.col-xs-12.fotos_borde
-				.row
-					.row
-						.col-lg-6.col-md-6.col-xs-12.sP
-							// pequeñitos
-							.row
-								.col-lg-12.col-md-12.col-xs-12.sP(style='height:230px')
-									img(src='images/piernita1.png', style='margin:0;width:90%; position:absolute;z-index:-1')
-									div(style='padding:20px;width:90%;color:white;background-color:rgba(237,181,85,0.5);margin-top:45%')
-										| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										| tempor incididunt   
-										a(href='') Ver mas
-								.col-lg-12.col-md-12.col-xs-12.sP
-									img(src='images/piernita3.png', style='width:90%;margin:0;padding-top:20px')
-						.col-lg-6.col-md-12.col-xs-12.sP
-							img(src='images/nueva.png', style='margin:0;width:90%;position:absolute;z-index: -1;height:390px')
-							div(style='padding:20px;width:90%;color:white;background-color:rgba(255,0,0,0.5);margin-top:88%')
-								span(style='font-size: 13px')
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
-								a(href='') Ver mas
-					.row
-						.col-lg-12.col-md-12.col-xs-12.sP
-							img(src='images/pernita4.png', style='margin:0px;margin-top:20px;width:95%;z-index:-1;position:absolute')
-							div(style='padding:20px;width:95%;color:white;background-color:rgba(78,179,111,0.8);margin-top:40%')
-								span(style='font-size: 13px')
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
-								a(href='') Ver mas
-			// grande
-			.col-lg-6.col-md-6.col-xs-12
-				// grande- subseccion
-				.row.fotos_borde
-					.col-lg-6.col-md-6.col-xs-12
-						.col-lg-12.col-md-12.col-xs-12.sP
-							img(style='margin:0; width:100%;margin-top:20px', src='images/pernita5.png')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/CaBYiBORMoE', frameborder='0', allowfullscreen='')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/mnb3sFMcuxQ', frameborder='0', allowfullscreen='')
-					.col-lg-6.col-md-6.col-xs-12.sP
-						.col-lg-12.col-md-12.col-xs-12.sP(style='height:330px')
-							img(src='images/img2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
-							div(style='padding:12px;width:100%;color:white;background-color:rgba(246,188,87,0.5);margin-top:95%')
-								| Lorem ipsum dolor sit amet, consectetur adipisicing elitasfdefawefwf
-								a(href='#') Ver mas
-						.col-lg-12.col-md-12.col-xs-12.sP(style='height:396px;margin-top:10px;overflow:hidden')
-							img(src='images/piernita2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
-							div(style='padding:20px;width:100%;color:white;background-color:rgba(255,0,0,0.5);margin-top:110%;')
-								span   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								a(href='#') Ver mas
-<!-- FIN GRID D ITEMS -->
+<!-- INICIO Interfacultades -->
+	section.container.interFacultades
+		div.row
+			div.col-md-3.col-sm-6.col-xs-12.interFac
+				div.image1 
+					div.texto-interFac--A Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+						a.link-A(href="#") ver más
+					div.title-interFac--A Ajedrez	
+
+			div.col-md-3.col-sm-6.col-xs-12.interFac
+				div.image2 
+					div.texto-interFac--B Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+						a.link-B(href="#") ver más
+					div.title-interFac--B Basket
+			div.col-md-3.col-sm-6.col-xs-12.interFac
+				div.image3 
+					div.texto-interFac--F Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+						a.link-F(href="#") ver más
+					div.title-interFac--F Futbol
+			div.col-md-3.col-sm-6.col-xs-12.interFac
+				div.image4 
+					div.texto-interFac--V Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+						a.link-V(href="#") ver más
+					div.title-interFac--V Voley
+	
+<!-- FIN Interfacultades -->
+<!-- row  calendar -->
+	section.container.interFacultades
+		div.row
+			div.col-md-4 
+				//- h3.subtitle-h3 Calendario Deportivo
+				.container-two
+					section.main
+						div.custom-calendar-wrap
+								div#custom-inner.custom-inner
+								div.custom-header.clearfix
+									nav
+										span#custom-prev.custom-prev
+										span#custom-next.custom-next
+									h2#custom-month.custom-month
+									h3#custom-year.custom-year
+								div#calendar.fc-calendar-container
+
+			div.col-md-4
+
+				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+			div.col-md-4 
+				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+<!-- Fin row calendar  -->
+
+
 	hr.line-dashed
 <!-- Menu Pie -->
 	section.container
 		.row
-			.col-md-10
+			.col-md-12
 				ul.submenu
 					li
 						a(href="#")  Contacto
@@ -187,6 +188,6 @@ body
 			.col-md-6.col-md-offset-3 
 				p.footer--texto Universidad San Martin de Porres - Todos los Derechos Reservados
 
-
-
-<!-- FIN GRID D ITEMS -->
+	script(type='text/javascript', src='js/jquery.calendario.js')
+	script(type='text/javascript', src='js/data.js')
+	script(type='text/javascript', src='js/functionCalendar.js')

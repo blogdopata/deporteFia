@@ -20,8 +20,8 @@ body
 	header.container
 		.row
 			figure.col-md-6.logo
-
-				img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
+				a(href="/")
+					img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
 			form.col-md-3.col-md-offset-3.form(action='')
 				input(type='text', placeholder='Buscar')
 <!-- FIN Cabecera --> 
@@ -40,10 +40,10 @@ body
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='#') NOSOTROS
+								a(href='/nosotros.html') NOSOTROS
 							
 							li
-								a(href='#') INTERFACULTADES
+								a(href='/interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -91,6 +91,8 @@ body
 			.item
 				img.img-responsive(src='images/pic2.jpg', alt='Pic slider 2', style='width:100%; height:38vh')
 			.item
+				img.img-responsive(src='images/pic3.jpg', alt='Pic slider 3', style='width:100%; height:38vh')
+			//.item
 				img.img-responsive(src='http://weddingplannershub.com/vendor/bower/wedding/branch_images/LtpmzAGTBWcxaoV_fMhT2PWFmgOZHPtd.jpg', alt='Chania', style='width:100%; height:38vh')
 		// Left and right controls
 		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
@@ -107,8 +109,9 @@ body
 <!-- INICIO Contenido -->
 	section.container.contenido
 		div.row
-			div.col-md-9
-				h2.title-h2--izq ¿Quienes Somos?
+			div.col-md-9.product-item(category="QS")
+				h2.title-h2--izq  Somos
+
 				p.textoG La Universidad de San Martín de Porres promueve la práctica del deporte y recreación como factores educativos adicionales a la formación y desarrollo de los alumnos.
 				h2.subtitle-h2 Misión
 
@@ -125,7 +128,52 @@ body
 					li Liderazgo
 					li Trabajo en equipo
 
+			div.col-md-9.product-item(category="EQ" style="display:none;")
+				h2.title-h2--izq  EQUIPO
+
+				h2.subtitle-h2 MIEMBROS DEL COMITÉ DEL PROGRAMA DEPORTIVO DE ALTA COMPETENCIA (PRODAC) DE LA UNIVERSIDAD DE SAN MARTÍN DE PORRES
+
+				h2.subtitle-h2 Valores
+				ul.valores
+					li
+						p Mag. Luis Maraví
+						p Jefe de PRODAC de la Universidad de San Martín de Porres.
+					li
+						p Dr. Víctor García
+						p Representante de la Facultad de Ciencias Administrativas y Recursos Humanos.
+					li
+						p Lic. Fredy Ávila
+						p Representante de la Facultad de Ciencias de la Comunicación, Turismo y Psicología.
+					li
+						p Lic. María Pizarro
+						p Representante la Facultad de Ciencias Contables, Económicas y Financieras.
+					li
+						p Lic. Amparo Alvarado
+						p Representante de la Facultad de Derecho.
+					li
+						p Lic. Rosalva Rojas
+						p Representante de la Facultad de Ingeniería y Arquitectura.
+					li
+						p Dra. Liliana Gómez
+						p Representante de la Facultad de Medicina Humana
+					li
+						p Lic. María Isabel Ganoza
+						p Representante de la Facultad de Obstetricia y Enfermería.
+					li
+						p Cristopher Escudero
+						p Representante de la Facultad de Odontología.
+
 			div.col-md-3
+				ul.menu-nosotros
+					li
+						a.category_item(category="QS") 
+							span.glyphicon.glyphicon-chevron-right
+							|	¿Quiénes Somos?
+					li
+						a.category_item(category="EQ")
+							span.glyphicon.glyphicon-chevron-right
+							|  Equipo
+
 				h2.title-h2--der Últimas Noticias
 				div.noticias-general
 					p texto Random  texto Random  texto Random 
@@ -135,10 +183,10 @@ body
 				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
 				
 				h3.subtitle-h3 Calendario Deportivo
+				//- iframe(src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=sfbs3iv5f751694al9ko5hn80g%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLima" )
+				iframe(src="https://www.google.com/calendar/embed?showTitle=0&showDate=0&showPrint=0&showTabs=0&showTz=0&mode=AGENDA&height=400&wkst=1&bgcolor=%233366ff&src=sfbs3iv5f751694al9ko5hn80g%40group.calendar.google.com" style="border-width:0" , width="100%" , height="200" , frameborder="0"  , scrolling="no")
 
-		
-
-
+				
 <!-- FIN Contenido -->
 	hr.line-dashed
 <!-- Menu Pie -->
@@ -164,4 +212,4 @@ body
 		.row
 			.col-md-6.col-md-offset-3 
 				p.footer--texto Universidad San Martin de Porres - Todos los Derechos Reservados
-	
+	script(src="js/showContenido.js")

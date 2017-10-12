@@ -116,14 +116,18 @@ span.separate {
 
 /* CONTENIDO */
 
-/* Parte izuquierda */
+/* Parte izquierda */
 .title-h2--izq{
-	background-color: #49C1BC;
-	color: white;
-	text-align:center;
-	padding:10px 0;
+	color: black;
+	padding:10px 0 10px 10px;
 	font-style:bold;
-	font-size:22px;
+	font-size:30px;
+	
+	&:after{
+		content:' ';
+    display:block;
+    border:2px solid #49C1BC;
+	}
 }
 .textoG{
 	font-size:18px;
@@ -146,9 +150,38 @@ ul.valores{
 }
 
 /* Parte derecha */
+.menu-nosotros{
+	background-color:#909494;
+	margin:35px 0 0 0;;
+	/*border:1px solid red;*/
+	padding: 15px 0;
+	color:white;
+	li{
+	
+		a{
+			color:white;
+			display: block;
+			background-color:#909494;
+			padding:5px 10px;
+			font-size: 18px;
+			&:hover{
+			background-color: rgba(85,96,95,0.6);
+		}
+		}
+		
+	}
+
+}	
+
+
 .title-h2--der{
-	@extend .title-h2--izq;
 	background-color: #E89C3C;
+	color: white;
+	text-align:center;
+	padding:10px 0;
+	font-style:bold;
+	font-size:22px;
+	
 	margin-bottom: 0px ;
 }
 h3.subtitle-h3{
@@ -157,13 +190,136 @@ h3.subtitle-h3{
 	text-align: center;
 	padding: 10px 0;
 }
-
-
-
-
+.view-container-border{
+	background-color: black !important;
+}
 
 /* FIN CONTENIDO */
 
+/* Interfacultades */ 
+section.interFacultades{
+	/*border:1px solid red;*/
+	max-width:1000px;
+	margin-top:50px;
+	.interFac{
+		/*border:1px solid blue;*/
+		text-align: center;
+		position: relative;
+		
+	}
+}
+.image1{
+	 background-image: url('../images/interFac1.jpg');
+	 width: 212px;
+	 height: 584px;
+	 position: relative;
+	 margin: 0 auto;
+}
+.image2{
+	 background-image: url('../images/interFac2.jpg');
+	 width: 212px;
+	 height: 584px;
+	 position: relative;
+	 margin: 0 auto;
+}
+.image3{
+	 background-image: url('../images/interFac3.jpg');
+	 width: 212px;
+	 height: 584px;
+	 position: relative;
+	 margin: 0 auto;
+}
+.image4{
+	 background-image: url('../images/interFac4.jpg');
+	 width: 212px;
+	 height: 584px;
+	 position: relative;
+	 margin: 0 auto;
+}
+
+.texto-interFac--A{
+			position: absolute;
+			bottom:0;
+		
+			height: auto;
+			width: 100%;
+			background-color: rgba(43,44,47,0.9);
+			font-size: 14px;
+			color: white;
+			padding: 15px;
+			/* &:hover{
+			// 	background-color: rgb(43,44,47);
+			/ }*/
+			.link-A{
+				background-color: #52BCBB;
+				display:inline-block;
+				float: right;
+				font-weight: bold;
+				color:white;
+				padding:5px;
+				margin: 20px 0 35px 0;
+			}
+}
+
+.title-interFac--A{
+	background-color: #2B2C2F;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	margin: 10px 0 0 0 ;
+	padding:10px 0;
+	color:white;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family: $font-pricipal;
+
+}
+
+.texto-interFac--B{
+	@extend .texto-interFac--A;
+	background-color: rgba(180,80,45,0.6);
+	.link-B{
+		@extend .link-A;
+		background-color: #50B26F;
+	}
+}
+.title-interFac--B{
+	@extend .title-interFac--A;
+	background-color: #B4502D;
+}
+
+.texto-interFac--F{
+	@extend .texto-interFac--A;
+	background-color: rgba(14,90,45,0.6);
+	.link-F{
+		@extend .link-A;
+		background-color: #F6BC57;
+	}
+}
+.title-interFac--F{
+	@extend .title-interFac--A;
+	background-color: #0E5A2D;
+}
+
+
+.texto-interFac--V{
+	@extend .texto-interFac--A;
+	background-color: rgba(96,7,54,0.6);
+	.link-V{
+		@extend .link-A;
+		background-color: #D5404E;
+	}
+}
+.title-interFac--V{
+	@extend .title-interFac--A;
+	background-color: #600736;
+}
+
+
+
+
+
+/* FIN  Interfacultades */ 
 @import 'menu';
 
 @include desktop-lg{
@@ -181,7 +337,7 @@ h3.subtitle-h3{
 		align-items:center;
 	}
 	span.separate {
-	margin-left: 35px;
+	margin-left: 30px;
 	display:inline-block;
 	}
 }
