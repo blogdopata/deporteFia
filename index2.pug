@@ -5,9 +5,6 @@ head
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 
 	link(rel="Shortcut Icon", href="http://www.usmp.edu.pe/images/logo.ico")
-<!--	link(rel='stylesheet', type='text/css', href='css/demo.css')-->
-	link(rel='stylesheet', type='text/css', href='css/calendar.css')
-	link(rel='stylesheet', type='text/css', href='css/custom_2.css')
 	link(rel="stylesheet", href="css/bootstrap.css")
 	link(rel="stylesheet", href="css/slider.css")
 	link(rel="stylesheet", href="css/style.css")
@@ -15,7 +12,6 @@ head
 	script(src="js/jquery.js")
 	script(src="js/bootstrap.js")
 	script(src="js/myJS.js")
-	script(src='js/modernizr.custom.63321.js')
 	title Deportes FIA
 
 body
@@ -24,7 +20,7 @@ body
 	header.container
 		.row
 			figure.col-md-6.logo
-				a(href="./")
+				a(href="/")
 					img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
 			form.col-md-3.col-md-offset-3.form(action='')
 				input(type='text', placeholder='Buscar')
@@ -44,10 +40,10 @@ body
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='./nosotros.html') NOSOTROS
+								a(href='/nosotros.html') NOSOTROS
 							
 							li
-								a(href='./interfacultades.html') INTERFACULTADES
+								a(href='/interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -110,64 +106,16 @@ body
 
 <!-- FIN SLIDER -->	
 
-<!-- INICIO Interfacultades -->
-	section.container.interFacultades
-		div.row
-			div.col-md-3.col-sm-6.col-xs-12.interFac
-				div.image1 
-					div.texto-interFac--A Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-A(href="#") ver más
-					div.title-interFac--A Ajedrez	
-
-			div.col-md-3.col-sm-6.col-xs-12.interFac
-				div.image2 
-					div.texto-interFac--B Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-B(href="#") ver más
-					div.title-interFac--B Basket
-			div.col-md-3.col-sm-6.col-xs-12.interFac
-				div.image3 
-					div.texto-interFac--F Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-F(href="#") ver más
-					div.title-interFac--F Futbol
-			div.col-md-3.col-sm-6.col-xs-12.interFac
-				div.image4 
-					div.texto-interFac--V Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-V(href="#") ver más
-					div.title-interFac--V Voley
+<!-- INICIO GRID D ITEMS -->
 	
-<!-- FIN Interfacultades -->
-<!-- row  calendar -->
-	section.container.interFacultades
-		div.row
-			div.col-md-4 
-				//- h3.subtitle-h3 Calendario Deportivo
-				.container-two
-					section.main
-						div.custom-calendar-wrap
-								div#custom-inner.custom-inner
-								div.custom-header.clearfix
-									nav
-										span#custom-prev.custom-prev
-										span#custom-next.custom-next
-									h2#custom-month.custom-month
-									h3#custom-year.custom-year
-								div#calendar.fc-calendar-container
 
-			div.col-md-4
-
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-			div.col-md-4 
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-<!-- Fin row calendar  -->
-
-
+								
+<!-- FIN GRID D ITEMS -->
 	hr.line-dashed
 <!-- Menu Pie -->
 	section.container
 		.row
-			.col-md-12
+			.col-md-10
 				ul.submenu
 					li
 						a(href="#")  Contacto
@@ -188,6 +136,6 @@ body
 			.col-md-6.col-md-offset-3 
 				p.footer--texto Universidad San Martin de Porres - Todos los Derechos Reservados
 
-	script(type='text/javascript', src='js/jquery.calendario.js')
-	script(type='text/javascript', src='js/data.js')
-	script(type='text/javascript', src='js/functionCalendar.js')
+
+
+<!-- FIN GRID D ITEMS -->

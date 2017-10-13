@@ -20,7 +20,7 @@ body
 	header.container
 		.row
 			figure.col-md-6.logo
-				a(href="/")
+				a(href="./")
 					img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
 			form.col-md-3.col-md-offset-3.form(action='')
 				input(type='text', placeholder='Buscar')
@@ -40,10 +40,10 @@ body
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='/nosotros.html') NOSOTROS
+								a(href='./nosotros.html') NOSOTROS
 							
 							li
-								a(href='/interfacultades.html') INTERFACULTADES
+								a(href='./interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -107,9 +107,10 @@ body
 <!-- FIN SLIDER -->	
 
 <!-- INICIO Contenido -->
-	section.container.contenido
+	section.container
 		div.row
-			div.col-md-9.product-item(category="QS")
+			//- div.col-md-9.col-md-push-0.col-sm-9.col-sm-push-3.col-xs-12.show-item(style="border:1px solid red",category="QS")
+			div.col-md-9.col-md-push-0.col-sm-9.col-sm-push-3.col-xs-12.show-item(category="QS")
 				h2.title-h2--izq  Somos
 
 				p.textoG La Universidad de San Martín de Porres promueve la práctica del deporte y recreación como factores educativos adicionales a la formación y desarrollo de los alumnos.
@@ -128,7 +129,7 @@ body
 					li Liderazgo
 					li Trabajo en equipo
 
-			div.col-md-9.product-item(category="EQ" style="display:none;")
+			div.col-md-9.col-md-push-0.col-sm-9.col-sm-push-3.col-xs-12.show-item(category="EQ" , style="display:none;")
 				h2.title-h2--izq  EQUIPO
 
 				h2.subtitle-h2 MIEMBROS DEL COMITÉ DEL PROGRAMA DEPORTIVO DE ALTA COMPETENCIA (PRODAC) DE LA UNIVERSIDAD DE SAN MARTÍN DE PORRES
@@ -162,8 +163,8 @@ body
 					li
 						p Cristopher Escudero
 						p Representante de la Facultad de Odontología.
-
-			div.col-md-3
+			//- div.col-md-3.col-md-pull-0.col-sm-3.col-sm-pull-9.col-xs-12(style="border:1px solid blue")
+			div.col-md-3.col-md-pull-0.col-sm-3.col-sm-pull-9.col-xs-12
 				ul.menu-nosotros
 					li
 						a.category_item(category="QS") 
@@ -185,8 +186,7 @@ body
 				h3.subtitle-h3 Calendario Deportivo
 				//- iframe(src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=sfbs3iv5f751694al9ko5hn80g%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=America%2FLima" )
 				iframe(src="https://www.google.com/calendar/embed?showTitle=0&showDate=0&showPrint=0&showTabs=0&showTz=0&mode=AGENDA&height=400&wkst=1&bgcolor=%233366ff&src=sfbs3iv5f751694al9ko5hn80g%40group.calendar.google.com" style="border-width:0" , width="100%" , height="200" , frameborder="0"  , scrolling="no")
-
-				
+					
 <!-- FIN Contenido -->
 	hr.line-dashed
 <!-- Menu Pie -->

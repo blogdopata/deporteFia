@@ -5,10 +5,10 @@
 /* Medias queries */
 /*  Mixins para los media QUERIOES */
 /*
-Extra small devices Phones (<768px)	
-Small devices Tablets (≥768px)
-Medium devices Desktops (≥992px)	
-Large devices Desktops (≥1200px)
+Extra small devices Phones (<768px)	 COL-XS-
+Small devices Tablets (≥768px)     COL-SM-
+Medium devices Desktops (≥992px)	 COL-MD-
+Large devices Desktops (≥1200px)	 COL-LG-
 */
 body {
   background-color: white;
@@ -267,6 +267,8 @@ section.interFacultades {
   background-color: #600736; }
 
 /* FIN  Interfacultades */
+/* INDEX 2 TEST */
+/* FIN INDEX 2 TEST */
 .navbar, .dropdown-menu {
   background-color: #BA4B57;
   border: none; }

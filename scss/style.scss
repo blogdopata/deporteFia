@@ -5,10 +5,10 @@
 @import 'mixins';
 
 /*
-Extra small devices Phones (<768px)	
-Small devices Tablets (≥768px)
-Medium devices Desktops (≥992px)	
-Large devices Desktops (≥1200px)
+Extra small devices Phones (<768px)	 COL-XS-
+Small devices Tablets (≥768px)     COL-SM-
+Medium devices Desktops (≥992px)	 COL-MD-
+Large devices Desktops (≥1200px)	 COL-LG-
 */
 
 body{
@@ -196,6 +196,8 @@ h3.subtitle-h3{
 
 /* FIN CONTENIDO */
 
+
+
 /* Interfacultades */ 
 section.interFacultades{
 	/*border:1px solid red;*/
@@ -316,10 +318,15 @@ section.interFacultades{
 }
 
 
-
-
-
 /* FIN  Interfacultades */ 
+
+/* INDEX 2 TEST */ 
+
+
+
+/* FIN INDEX 2 TEST */
+
+
 @import 'menu';
 
 @include desktop-lg{

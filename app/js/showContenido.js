@@ -5,15 +5,15 @@ $(document).ready(function(){
 		$('.category_item').removeClass('ct_item-active');
 		$(this).addClass('ct_item-active');
 
-		$('.product-item').css('transform','scale(0)');
+		$('.show-item').css('transform','scale(0)');
 
 		function hideProduct(){
-			$('.product-item').hide();	
+			$('.show-item').hide();	
 		} setTimeout(hideProduct,200);
 
 		function showProduct(){
-			$('.product-item[category="'+catProduct+'"]').show();
-			$('.product-item[category="'+catProduct+'"]').css('transform','scale(1)');
+			$('.show-item[category="'+catProduct+'"]').show();
+			$('.show-item[category="'+catProduct+'"]').css('transform','scale(1)');
 		} setTimeout(showProduct,200);
 	});
 });
