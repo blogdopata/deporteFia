@@ -34,14 +34,12 @@ body{
 	/*border : 1px solid red;*/
 	padding: 20px 0 0 10px;
 	text-align:center;
-	margin: 0px 0 10px 0;
+	margin: 10px 0 15px 0;
 	
 	img{
 		width: 300px;
 		/*border:1px solid red;*/
-
 	}
-
 }
 .form{
 	height:120px;
@@ -49,7 +47,6 @@ body{
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
-
 }
 input[type="text"]{
 	padding: 2px 10px;
@@ -59,18 +56,7 @@ img.line-color{
 	width:100%;
 	vertical-align:top;
 }
-.gridPics{
-	/*border : 1px solid red;*/
-	margin-top:50px;
-}
-.sP{
-	padding:0;
-	margin-top: 0px;
-}
-.fotos_borde img{
-	margin:20px;
-	
-}
+
 .video{
 	margin-top:20px;
 }
@@ -83,8 +69,8 @@ img.line-color{
 
 ul.submenu{
 	display:inline-block;
+	/*border:1px solid red;*/
 }
-
 
 .submenu li{
 	display:inline-block;
@@ -211,32 +197,27 @@ section.interFacultades{
 	}
 }
 .image1{
-	 background-image: url('../images/interFac1.jpg');
+	 background-repeat: no-repeat;
 	 width: 212px;
 	 height: 584px;
 	 position: relative;
 	 margin: 0 auto;
+	 background-image: url('../images/interFac1.jpg');
 }
 .image2{
-	 background-image: url('../images/interFac2.jpg');
-	 width: 212px;
-	 height: 584px;
-	 position: relative;
-	 margin: 0 auto;
+	@extend .image1;
+	background-image: url('../images/interFac2.jpg');
+	
 }
 .image3{
-	 background-image: url('../images/interFac3.jpg');
-	 width: 212px;
-	 height: 584px;
-	 position: relative;
-	 margin: 0 auto;
+	@extend .image1;
+	background-image: url('../images/interFac3.jpg');
+	
 }
 .image4{
-	 background-image: url('../images/interFac4.jpg');
-	 width: 212px;
-	 height: 584px;
-	 position: relative;
-	 margin: 0 auto;
+	@extend .image1;
+	background-image: url('../images/interFac4.jpg');
+	
 }
 
 .texto-interFac--A{
@@ -321,6 +302,132 @@ section.interFacultades{
 /* FIN  Interfacultades */ 
 
 /* INDEX 2 TEST */ 
+section.pics-c{
+	margin-top:25px;
+}
+.pic1{
+	 width: auto;
+	 height: 240px;
+	 position: relative;
+	 margin: 0 auto;
+	 background-image: url('../images/pic-1.jpg');
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+.texto-pic1{
+	position: absolute;
+	bottom:0;
+	height: auto;
+	width: 100%;
+	background-color: rgba(244,184,94,0.5);
+	font-size: 12px;
+	color: white;
+	padding: 10px;
+	text-align: justify;
+	font-family: $font-pricipal;
+
+	// border:1px solid red;
+	/* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/
+	.link-pic1{
+		background-color: #52BCBB;
+		display:inline-block;
+		float: right;
+		font-weight: bold;
+		color:white;
+		padding:5px;
+		/*border:1px solid red;*/
+		margin: 10px 10px 0 0 ;		
+			}
+}
+.pic2{
+	@extend .pic1;
+	height: 120px;
+	background-image: url('../images/pic-2.jpg');
+	margin-top:20px;
+}
+
+.pic3{
+	@extend .pic1;
+	height: 380px;
+	background-image: url('../images/pic-3.jpg');
+
+}
+.texto-pic3{
+	@extend .texto-pic1;
+	background-color: rgba(241,96,98,0.5);
+	/* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/
+	.link-pic3{
+		@extend .link-pic1;
+		background-color: #50B26F;
+				
+	}
+}
+
+.pic4{
+	@extend .pic1;
+	height: 300px;
+	background-image: url('../images/pic-4.jpg');
+
+}
+.texto-pic4{
+	@extend .texto-pic1;
+	background-color: rgba(76,186,123,0.8);
+	/* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/
+	.link-pic4{
+		@extend .link-pic1;
+		background-color: #F6BC57;
+				
+	}
+}
+.pic5{
+	@extend .pic1;
+	height: 100px;
+	background-image: url('../images/pic-5.jpg');
+}
+
+.pic6{
+	@extend .pic1;
+	height: 350px;
+	background-image: url('../images/pic-6.jpg');
+
+}
+.texto-pic6{
+	@extend .texto-pic1;
+	background-color: rgba(76,186,123,0.8);
+	/* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/
+	.link-pic6{
+		@extend .link-pic1;
+		background-color: #D64755;
+				
+	}
+}
+.pic7{
+	@extend .pic1;
+	height: 350px;
+	background-image: url('../images/pic-7.jpg');
+
+}
+.texto-pic7{
+	@extend .texto-pic1;
+	background-color: rgba(241,96,98,0.5);
+	/* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/
+	.link-pic7{
+		@extend .link-pic1;
+		background-color:  #52BCBB;
+				
+	}
+}
+
 
 
 

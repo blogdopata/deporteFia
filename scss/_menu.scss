@@ -1,7 +1,7 @@
 
 .navbar, .dropdown-menu{
 background-color: $color-bk-menu;
-border: none;
+// border: 1px solid red;
 }
 
 .nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
@@ -50,9 +50,10 @@ border: none;
     }
 
 	.navbar-nav li{
+
 		margin: 0 50px;
 		font-family: 'Roboto', sans-serif;
-		font-style: italic;
+		font-style: normal;
 		li{
 			
 			margin:7px 0;

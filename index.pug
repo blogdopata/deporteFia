@@ -20,10 +20,10 @@ body
 	header.container
 		.row
 			figure.col-md-6.logo
-				a(href="./")
+				a(href="http://usmp.edu.pe/deportes/")
 					img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
-			form.col-md-3.col-md-offset-3.form(action='')
-				input(type='text', placeholder='Buscar')
+			//- form.col-md-3.col-md-offset-3.form(action='')
+			//- 	input(type='text', placeholder='Buscar')
 <!-- FIN Cabecera --> 
 
 <!--  INICIO MENU --> 
@@ -40,10 +40,10 @@ body
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='./nosotros.html') NOSOTROS
+								a(href='http://usmp.edu.pe/deportes/nosotros.html') NOSOTROS
 							
 							li
-								a(href='./interfacultades.html') INTERFACULTADES
+								a(href='http://usmp.edu.pe/deportes/interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -77,96 +77,57 @@ body
 <!-- FIN  MENU --> 
 <!-- SLIDER -->
 
-	#myCarousel.carousel.slide(data-ride='carousel')
-		// Indicators
-		ol.carousel-indicators
-			li.active(data-target='#myCarousel', data-slide-to='0')
-			li(data-target='#myCarousel', data-slide-to='1')
-			li(data-target='#myCarousel', data-slide-to='2')
-			
-		// Wrapper for slides
-		.carousel-inner(role='listbox')
-			.item.active
-				img.img-responsive(src='images/pic1.jpg', alt='Pic slider 1', style='width:100%; height:38vh')
-			.item
-				img.img-responsive(src='images/pic2.jpg', alt='Pic slider 2', style='width:100%; height:38vh')
-			.item
-				img.img-responsive(src='images/pic3.jpg', alt='Pic slider 3', style='width:100%; height:38vh')
-			//.item
-				img.img-responsive(src='http://weddingplannershub.com/vendor/bower/wedding/branch_images/LtpmzAGTBWcxaoV_fMhT2PWFmgOZHPtd.jpg', alt='Chania', style='width:100%; height:38vh')
-		// Left and right controls
-		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-			span.sr-only Previous
-		a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-			span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-			span.sr-only Next
+	.container-fluid.no-padding
+		.row
+			.col-md-12
+				img.img-responsive(src='images/portada-index.jpg')
 
 	img.line-color(src="images/linea_colores.png", alt="Line of Colors")
 
 <!-- FIN SLIDER -->	
 
-<!-- INICIO GRID D ITEMS -->
-	section.container.gridPics
-		section.row
-			// grande
-			.col-lg-6.col-md-6.col-xs-12.fotos_borde
-				.row
-					.row
-						.col-lg-6.col-md-6.col-xs-12.sP
-							// pequeñitos
-							.row
-								.col-lg-12.col-md-12.col-xs-12.sP(style='height:230px')
-									img(src='images/piernita1.png', style='margin:0;width:90%; position:absolute;z-index:-1')
-									div(style='padding:20px;width:90%;color:white;background-color:rgba(237,181,85,0.5);margin-top:45%')
-										| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										| tempor incididunt   
-										a(href='') Ver mas
-								.col-lg-12.col-md-12.col-xs-12.sP
-									img(src='images/piernita3.png', style='width:90%;margin:0;padding-top:20px')
-						.col-lg-6.col-md-12.col-xs-12.sP
-							img(src='images/nueva.png', style='margin:0;width:90%;position:absolute;z-index: -1;height:390px')
-							div(style='padding:20px;width:90%;color:white;background-color:rgba(255,0,0,0.5);margin-top:88%')
-								span(style='font-size: 13px')
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
-								a(href='') Ver mas
-					.row
-						.col-lg-12.col-md-12.col-xs-12.sP
-							img(src='images/pernita4.png', style='margin:0px;margin-top:20px;width:95%;z-index:-1;position:absolute')
-							div(style='padding:20px;width:95%;color:white;background-color:rgba(78,179,111,0.8);margin-top:40%')
-								span(style='font-size: 13px')
-									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.
-								a(href='') Ver mas
-			// grande
-			.col-lg-6.col-md-6.col-xs-12
-				// grande- subseccion
-				.row.fotos_borde
-					.col-lg-6.col-md-6.col-xs-12
-						.col-lg-12.col-md-12.col-xs-12.sP
-							img(style='margin:0; width:100%;margin-top:20px', src='images/pernita5.png')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/CaBYiBORMoE', frameborder='0', allowfullscreen='')
-						.col-lg-12.col-md-12.col-xs-12.sP
-							iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/mnb3sFMcuxQ', frameborder='0', allowfullscreen='')
-					.col-lg-6.col-md-6.col-xs-12.sP
-						.col-lg-12.col-md-12.col-xs-12.sP(style='height:330px')
-							img(src='images/img2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
-							div(style='padding:12px;width:100%;color:white;background-color:rgba(246,188,87,0.5);margin-top:95%')
-								| Lorem ipsum dolor sit amet, consectetur adipisicing elitasfdefawefwf
-								a(href='#') Ver mas
-						.col-lg-12.col-md-12.col-xs-12.sP(style='height:396px;margin-top:10px;overflow:hidden')
-							img(src='images/piernita2.png', style='margin:0;width:100%;position:absolute;z-index:-1')
-							div(style='padding:20px;width:100%;color:white;background-color:rgba(255,0,0,0.5);margin-top:110%;')
-								span   Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								a(href='#') Ver mas
-<!-- FIN GRID D ITEMS -->
+<!-- INICIO GRID D ITEMSs -->
+	section.container.pics-c
+		div.row
+			div.col-md-6
+				div.row
+					div.col-md-6
+						div.pic1
+							div.texto-pic1 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic1(href="#") ver más
+						div.pic2.hidden-xs.hidden-sm
+									
+					div.col-md-6.hidden-sm
+						div.pic3.hidden-xs.hidden-sm
+							div.texto-pic3 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic3(href="#") ver más
+
+					div.col-md-12
+						div.pic4(style="margin-top:20px;")
+							div.texto-pic4 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic4(href="#") ver más	
+	
+			div.col-md-6
+				div.row
+					div.col-md-6
+						div.pic5
+						iframe.video.hidden-xs.hidden-sm(width='100%',style="height:175px", src='https://www.youtube.com/embed/4qQq87HixWs', frameborder='0', allowfullscreen='')
+						iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/AUj-PEWAGIw', frameborder='0', allowfullscreen='')
+						iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/sEfgOuDRv8Y', frameborder='0', allowfullscreen='')
+					div.col-md-6
+						div.pic6.hidden-xs.hidden-sm
+							div.texto-pic6 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic6(href="#") ver más
+						div.pic7
+							div.texto-pic7 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic7(href="#") ver más
+
+<!-- FIN GRID D ITEMSS -->
 	hr.line-dashed
 <!-- Menu Pie -->
 	section.container
 		.row
-			.col-md-10
+			.col-md-10.col-md-offset-1
 				ul.submenu
 					li
 						a(href="#")  Contacto

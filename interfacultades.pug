@@ -4,14 +4,14 @@ head
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 
-	link(rel="Shortcut Icon", href="http://www.usmp.edu.pe/images/logo.ico")
+	link(rel="Shortcut Icon", href="http://usmp.edu.pe/images/logo.ico")
 <!--	link(rel='stylesheet', type='text/css', href='css/demo.css')-->
 	link(rel='stylesheet', type='text/css', href='css/calendar.css')
-	link(rel='stylesheet', type='text/css', href='css/custom_2.css')
+	link(rel='stylesheet', type='text/css', href='css/calendar_custom_2.css')
 	link(rel="stylesheet", href="css/bootstrap.css")
 	link(rel="stylesheet", href="css/slider.css")
 	link(rel="stylesheet", href="css/style.css")
-	link(rel="shortcut icon", href="images/logo.ico")
+	link(rel="shortcut icon", href="http://www.usmp.edu.pe/images/logo.ico")
 	script(src="js/jquery.js")
 	script(src="js/bootstrap.js")
 	script(src="js/myJS.js")
@@ -24,10 +24,10 @@ body
 	header.container
 		.row
 			figure.col-md-6.logo
-				a(href="./")
+				a(href="http://usmp.edu.pe/deportes/")
 					img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
-			form.col-md-3.col-md-offset-3.form(action='')
-				input(type='text', placeholder='Buscar')
+			//- form.col-md-3.col-md-offset-3.form(action='')
+			//- 	input(type='text', placeholder='Buscar')
 <!-- FIN Cabecera --> 
 
 <!--  INICIO MENU --> 
@@ -44,10 +44,10 @@ body
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='./nosotros.html') NOSOTROS
+								a(href='http://usmp.edu.pe/deportes/nosotros.html') NOSOTROS
 							
 							li
-								a(href='./interfacultades.html') INTERFACULTADES
+								a(href='http://usmp.edu.pe/deportes/interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -167,7 +167,7 @@ body
 <!-- Menu Pie -->
 	section.container
 		.row
-			.col-md-12
+			.col-md-10.col-md-offset-1
 				ul.submenu
 					li
 						a(href="#")  Contacto

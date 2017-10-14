@@ -18,7 +18,10 @@
 </body><!-- Cabecera --> 
 <header class="container">
   <div class="row">
-    <figure class="col-md-6 logo"><a href="http://usmp.edu.pe/deportes/"><img src="images/fiaDeportesLogo.png" alt="Fia Deportes"/></a></figure>
+    <figure class="col-md-6 logo"><a href="./"><img src="images/fiaDeportesLogo.png" alt="Fia Deportes"/></a></figure>
+    <form class="col-md-3 col-md-offset-3 form" action="">
+      <input type="text" placeholder="Buscar"/>
+    </form>
   </div>
 </header><!-- FIN Cabecera --> 
 <!--  INICIO MENU --> 
@@ -31,8 +34,8 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="http://usmp.edu.pe/deportes/nosotros.html">NOSOTROS</a></li>
-            <li><a href="http://usmp.edu.pe/deportes/interfacultades.html">INTERFACULTADES</a></li>
+            <li class="active"><a href="./nosotros.html">NOSOTROS</a></li>
+            <li><a href="./interfacultades.html">INTERFACULTADES</a></li>
             <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LIGAS <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Profesionales</a></li>
@@ -75,86 +78,68 @@
   </div>
   <!-- Left and right controls--><a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
 </div><img class="line-color" src="images/linea_colores.png" alt="Line of Colors"/><!-- FIN SLIDER -->	
-<!-- INICIO Contenido -->
-<section class="container">
-  <div class="row">
-    <div class="col-md-9 col-md-push-0 col-sm-9 col-sm-push-3 col-xs-12 show-item" category="QS">
-      <h2 class="title-h2--izq"> Somos</h2>
-      <p class="textoG">La Universidad de San Martín de Porres promueve la práctica del deporte y recreación como factores educativos adicionales a la formación y desarrollo de los alumnos.</p>
-      <h2 class="subtitle-h2">Misión</h2>
-      <p class="textoG">Fomentar la práctica del deporte, la recreación, y la utilización del ocio productivo, mediante actividades lúdicas de fácil participación en la Universidad, como medio de integración y conservación de la salud física y mental.</p>
-      <h2 class="subtitle-h2">Visión</h2>
-      <p class="textoG">Posicionarnos como la universidad líder en la promoción y desarrollo de la práctica deportiva.</p>
-      <h2 class="subtitle-h2">Valores</h2>
-      <ul class="valores">
-        <li>Respeto</li>
-        <li>Responsabilidad</li>
-        <li>Integridad </li>
-        <li>Liderazgo</li>
-        <li>Trabajo en equipo</li>
-      </ul>
-    </div>
-    <div class="col-md-9 col-md-push-0 col-sm-9 col-sm-push-3 col-xs-12 show-item" category="EQ" style="display:none;">
-      <h2 class="title-h2--izq"> EQUIPO</h2>
-      <h2 class="subtitle-h2">MIEMBROS DEL COMITÉ DEL PROGRAMA DEPORTIVO DE ALTA COMPETENCIA (PRODAC) DE LA UNIVERSIDAD DE SAN MARTÍN DE PORRES</h2>
-      <ul class="valores">
-        <li>
-          <p>Mag. Luis Maraví</p>
-          <p>Jefe de PRODAC de la Universidad de San Martín de Porres.</p>
-        </li>
-        <li>
-          <p>Dr. Víctor García</p>
-          <p>Representante de la Facultad de Ciencias Administrativas y Recursos Humanos.</p>
-        </li>
-        <li>
-          <p>Lic. Fredy Ávila</p>
-          <p>Representante de la Facultad de Ciencias de la Comunicación, Turismo y Psicología.</p>
-        </li>
-        <li>
-          <p>Lic. María Pizarro</p>
-          <p>Representante la Facultad de Ciencias Contables, Económicas y Financieras.</p>
-        </li>
-        <li>
-          <p>Lic. Amparo Alvarado</p>
-          <p>Representante de la Facultad de Derecho.</p>
-        </li>
-        <li>
-          <p>Lic. Rosalva Rojas</p>
-          <p>Representante de la Facultad de Ingeniería y Arquitectura.</p>
-        </li>
-        <li>
-          <p>Dra. Liliana Gómez</p>
-          <p>Representante de la Facultad de Medicina Humana</p>
-        </li>
-        <li>
-          <p>Lic. María Isabel Ganoza</p>
-          <p>Representante de la Facultad de Obstetricia y Enfermería.</p>
-        </li>
-        <li>
-          <p>Cristopher Escudero</p>
-          <p>Representante de la Facultad de Odontología.</p>
-        </li>
-      </ul>
-    </div>
-    <div class="col-md-3 col-md-pull-0 col-sm-3 col-sm-pull-9 col-xs-12">
-      <ul class="menu-nosotros">
-        <li><a class="category_item" category="QS"> <span class="glyphicon glyphicon-chevron-right"></span>	¿Quiénes Somos?</a></li>
-        <li><a class="category_item" category="EQ"><span class="glyphicon glyphicon-chevron-right"></span> Equipo</a></li>
-      </ul>
-      <h2 class="title-h2--der">Últimas Noticias</h2>
-      <div class="noticias-general">
-        <p><strong>Inauguación Interfacultades:</strong> <br/>- Sábado 14 de Octubre  </p>
+<!-- INICIO GRID D ITEMS -->
+<section class="container gridPics">
+  <section class="row">
+    <!-- grande-->
+    <div class="col-lg-6 col-md-6 col-xs-12 fotos_borde">
+      <div class="row">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 sP">
+            <!-- pequeñitos-->
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-xs-12 sP" style="height:230px;"><img src="images/piernita1.png" style="margin:0;width:90%; position:absolute;z-index:-1;"/>
+                <div style="padding:20px;width:90%;color:white;background-color:rgba(237,181,85,0.5);margin-top:45%;">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt   <a href="">Ver mas</a>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-xs-12 sP"><img src="images/piernita3.png" style="width:90%;margin:0;padding-top:20px;"/></div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 sP"><img src="images/nueva.png" style="margin:0;width:90%;position:absolute;z-index: -1;height:390px;"/>
+            <div style="padding:20px;width:90%;color:white;background-color:rgba(255,0,0,0.5);margin-top:88%;"><span style="font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.</span><a href="">Ver mas</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-xs-12 sP"><img src="images/pernita4.png" style="margin:0px;margin-top:20px;width:95%;z-index:-1;position:absolute;"/>
+            <div style="padding:20px;width:95%;color:white;background-color:rgba(78,179,111,0.8);margin-top:40%;"><span style="font-size: 13px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu fringilla enim. Nulla ac congue ipsum. Aliquam erat volutpat. Aenean.</span><a href="">Ver mas</a></div>
+          </div>
+        </div>
       </div>
-      <iframe class="video" width="100%" style="height:188px;" src="https://www.youtube.com/embed/AUj-PEWAGIw" frameborder="0" allowfullscreen=""></iframe>
-      <h3 class="subtitle-h3">Calendario Deportivo</h3>
-      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%233366ff&amp;src=sfbs3iv5f751694al9ko5hn80g%40group.calendar.google.com" style="border-width:0;" width="100%" height="200" frameborder="0" scrolling="no"></iframe>
     </div>
-  </div>
-</section><!-- FIN Contenido -->
+    <!-- grande-->
+    <div class="col-lg-6 col-md-6 col-xs-12">
+      <!-- grande- subseccion-->
+      <div class="row fotos_borde">
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-xs-12 sP"><img style="margin:0; width:100%;margin-top:20px;" src="images/pernita5.png"/></div>
+          <div class="col-lg-12 col-md-12 col-xs-12 sP">
+            <iframe class="video" width="100%" style="height:188px;" src="https://www.youtube.com/embed/9MqZCsdZS3E" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+          <div class="col-lg-12 col-md-12 col-xs-12 sP">
+            <iframe class="video" width="100%" style="height:188px;" src="https://www.youtube.com/embed/CaBYiBORMoE" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+          <div class="col-lg-12 col-md-12 col-xs-12 sP">
+            <iframe class="video" width="100%" style="height:188px;" src="https://www.youtube.com/embed/mnb3sFMcuxQ" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12 sP">
+          <div class="col-lg-12 col-md-12 col-xs-12 sP" style="height:330px;"><img src="images/img2.png" style="margin:0;width:100%;position:absolute;z-index:-1;"/>
+            <div style="padding:12px;width:100%;color:white;background-color:rgba(246,188,87,0.5);margin-top:95%;">Lorem ipsum dolor sit amet, consectetur adipisicing elitasfdefawefwf<a href="#">Ver mas</a></div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-xs-12 sP" style="height:396px;margin-top:10px;overflow:hidden;"><img src="images/piernita2.png" style="margin:0;width:100%;position:absolute;z-index:-1;"/>
+            <div style="padding:20px;width:100%;color:white;background-color:rgba(255,0,0,0.5);margin-top:110%;"><span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span><a href="#">Ver mas</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section><!-- FIN GRID D ITEMS -->
 <hr class="line-dashed"/><!-- Menu Pie -->
 <section class="container">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-10">
       <ul class="submenu">
         <li><a href="#"> Contacto</a><span class="separate">| </span></li>
         <li><a href="#">Acerca de Nosotros </a><span class="separate">|</span></li>
@@ -171,5 +156,4 @@
       <p class="footer--texto">Universidad San Martin de Porres - Todos los Derechos Reservados</p>
     </div>
   </div>
-</footer>
-<script src="js/showContenido.js"></script>
+</footer><!-- FIN GRID D ITEMS -->

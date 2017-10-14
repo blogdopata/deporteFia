@@ -33,7 +33,7 @@ body {
   /*border : 1px solid red;*/
   padding: 20px 0 0 10px;
   text-align: center;
-  margin: 0px 0 10px 0; }
+  margin: 10px 0 15px 0; }
   .logo img {
     width: 300px;
     /*border:1px solid red;*/ }
@@ -60,17 +60,6 @@ img.line-color {
   width: 100%;
   vertical-align: top; }
 
-.gridPics {
-  /*border : 1px solid red;*/
-  margin-top: 50px; }
-
-.sP {
-  padding: 0;
-  margin-top: 0px; }
-
-.fotos_borde img {
-  margin: 20px; }
-
 .video {
   margin-top: 20px; }
 
@@ -80,7 +69,8 @@ img.line-color {
   margin: 60px auto; }
 
 ul.submenu {
-  display: inline-block; }
+  display: inline-block;
+  /*border:1px solid red;*/ }
 
 .submenu li {
   display: inline-block;
@@ -181,33 +171,22 @@ section.interFacultades {
     text-align: center;
     position: relative; }
 
-.image1 {
-  background-image: url("../images/interFac1.jpg");
+.image1, .image2, .image3, .image4 {
+  background-repeat: no-repeat;
   width: 212px;
   height: 584px;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-image: url("../images/interFac1.jpg"); }
 
 .image2 {
-  background-image: url("../images/interFac2.jpg");
-  width: 212px;
-  height: 584px;
-  position: relative;
-  margin: 0 auto; }
+  background-image: url("../images/interFac2.jpg"); }
 
 .image3 {
-  background-image: url("../images/interFac3.jpg");
-  width: 212px;
-  height: 584px;
-  position: relative;
-  margin: 0 auto; }
+  background-image: url("../images/interFac3.jpg"); }
 
 .image4 {
-  background-image: url("../images/interFac4.jpg");
-  width: 212px;
-  height: 584px;
-  position: relative;
-  margin: 0 auto; }
+  background-image: url("../images/interFac4.jpg"); }
 
 .texto-interFac--A, .texto-interFac--B, .texto-interFac--F, .texto-interFac--V {
   position: absolute;
@@ -268,10 +247,102 @@ section.interFacultades {
 
 /* FIN  Interfacultades */
 /* INDEX 2 TEST */
+section.pics-c {
+  margin-top: 25px; }
+
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+  width: auto;
+  height: 240px;
+  position: relative;
+  margin: 0 auto;
+  background-image: url("../images/pic-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.texto-pic1, .texto-pic3, .texto-pic4, .texto-pic6, .texto-pic7 {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  background-color: rgba(244, 184, 94, 0.5);
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  /* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/ }
+  .texto-pic1 .link-pic1, .texto-pic3 .link-pic1, .texto-pic4 .link-pic1, .texto-pic6 .link-pic1, .texto-pic7 .link-pic1, .texto-pic3 .link-pic3, .texto-pic4 .link-pic4, .texto-pic6 .link-pic6, .texto-pic7 .link-pic7 {
+    background-color: #52BCBB;
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    /*border:1px solid red;*/
+    margin: 10px 10px 0 0; }
+
+.pic2 {
+  height: 120px;
+  background-image: url("../images/pic-2.jpg");
+  margin-top: 20px; }
+
+.pic3 {
+  height: 380px;
+  background-image: url("../images/pic-3.jpg"); }
+
+.texto-pic3 {
+  background-color: rgba(241, 96, 98, 0.5);
+  /* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/ }
+  .texto-pic3 .link-pic3 {
+    background-color: #50B26F; }
+
+.pic4 {
+  height: 300px;
+  background-image: url("../images/pic-4.jpg"); }
+
+.texto-pic4 {
+  background-color: rgba(76, 186, 123, 0.8);
+  /* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/ }
+  .texto-pic4 .link-pic4 {
+    background-color: #F6BC57; }
+
+.pic5 {
+  height: 100px;
+  background-image: url("../images/pic-5.jpg"); }
+
+.pic6 {
+  height: 350px;
+  background-image: url("../images/pic-6.jpg"); }
+
+.texto-pic6 {
+  background-color: rgba(76, 186, 123, 0.8);
+  /* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/ }
+  .texto-pic6 .link-pic6 {
+    background-color: #D64755; }
+
+.pic7 {
+  height: 350px;
+  background-image: url("../images/pic-7.jpg"); }
+
+.texto-pic7 {
+  background-color: rgba(241, 96, 98, 0.5);
+  /* &:hover{
+	// 	background-color: rgb(43,44,47);
+	/ }*/ }
+  .texto-pic7 .link-pic7 {
+    background-color: #52BCBB; }
+
 /* FIN INDEX 2 TEST */
 .navbar, .dropdown-menu {
-  background-color: #BA4B57;
-  border: none; }
+  background-color: #BA4B57; }
 
 .nav > li > a, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a, .dropdown-menu > li {
   /*border-bottom: 3px solid transparent;*/ }
@@ -313,7 +384,7 @@ section.interFacultades {
   .navbar-nav li {
     margin: 0 50px;
     font-family: 'Roboto', sans-serif;
-    font-style: italic; }
+    font-style: normal; }
     .navbar-nav li li {
       margin: 7px 0; }
       .navbar-nav li li:hover {

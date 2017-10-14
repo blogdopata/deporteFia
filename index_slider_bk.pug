@@ -20,10 +20,10 @@ body
 	header.container
 		.row
 			figure.col-md-6.logo
-				a(href="/")
+				a(href="http://usmp.edu.pe/deportes/")
 					img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
-			form.col-md-3.col-md-offset-3.form(action='')
-				input(type='text', placeholder='Buscar')
+			//- form.col-md-3.col-md-offset-3.form(action='')
+			//- 	input(type='text', placeholder='Buscar')
 <!-- FIN Cabecera --> 
 
 <!--  INICIO MENU --> 
@@ -40,10 +40,10 @@ body
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='/nosotros.html') NOSOTROS
+								a(href='http://usmp.edu.pe/deportes/nosotros.html') NOSOTROS
 							
 							li
-								a(href='/interfacultades.html') INTERFACULTADES
+								a(href='http://usmp.edu.pe/deportes/interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -106,16 +106,48 @@ body
 
 <!-- FIN SLIDER -->	
 
-<!-- INICIO GRID D ITEMS -->
-	
+<!-- INICIO GRID D ITEMSs -->
+	section.container.pics-c
+		div.row
+			div.col-md-6
+				div.row
+					div.col-md-6
+						div.pic1
+							div.texto-pic1 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic1(href="#") ver más
+						div.pic2.hidden-xs.hidden-sm
+									
+					div.col-md-6.hidden-sm
+						div.pic3.hidden-xs.hidden-sm
+							div.texto-pic3 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic3(href="#") ver más
 
-								
-<!-- FIN GRID D ITEMS -->
+					div.col-md-12
+						div.pic4(style="margin-top:20px;")
+							div.texto-pic4 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic4(href="#") ver más	
+	
+			div.col-md-6
+				div.row
+					div.col-md-6
+						div.pic5
+						iframe.video.hidden-xs.hidden-sm(width='100%',style="height:175px", src='https://www.youtube.com/embed/4qQq87HixWs', frameborder='0', allowfullscreen='')
+						iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/AUj-PEWAGIw', frameborder='0', allowfullscreen='')
+						iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/sEfgOuDRv8Y', frameborder='0', allowfullscreen='')
+					div.col-md-6
+						div.pic6.hidden-xs.hidden-sm
+							div.texto-pic6 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic6(href="#") ver más
+						div.pic7
+							div.texto-pic7 Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+								a.link-pic7(href="#") ver más
+
+<!-- FIN GRID D ITEMSS -->
 	hr.line-dashed
 <!-- Menu Pie -->
 	section.container
 		.row
-			.col-md-10
+			.col-md-10.col-md-offset-1
 				ul.submenu
 					li
 						a(href="#")  Contacto
