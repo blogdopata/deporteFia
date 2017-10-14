@@ -52,6 +52,23 @@ input[type="text"]{
 	padding: 2px 10px;
 	font-style: italic; 
 }
+
+/* .navbar*/
+.navbar{
+	margin-bottom:0;
+}
+
+/* .navbar fix en el media query */ 
+.fix-image--container{
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+
+  .fix-image{
+  	width:100%;
+  	height: 40vh;
+  }
+}
 img.line-color{
 	width:100%;
 	vertical-align:top;
@@ -63,7 +80,7 @@ img.line-color{
 
 .line-dashed{
 	border:1px dashed black;width:84%;
-	margin:60px auto;
+	margin:60px auto 20px auto;
 }
 
 
@@ -77,7 +94,11 @@ ul.submenu{
 	margin: 5px 30px;
 	font-size: 20px;
 	/*border:1px solid red;*/
+	a{
+		text-decoration:none;
+	}
 }
+
 span.separate {
 	
 	margin-left: 35px;
@@ -87,7 +108,7 @@ span.separate {
 .footerP{
 	background-color:  #891531;
 	color :white;
-	margin-top:40px;
+	margin-top:15px;
 	/*border:1px solid yellow*;*/
 	.col-md-6{
 		/*border: 1px solid yellow;*/
@@ -95,25 +116,29 @@ span.separate {
 			text-align: center;
 			padding:10px 0;
 			margin:0;
-			font-style: italic;
+			/*font-style: italic;*/
 		}
 	}
 }
 
-/* CONTENIDO */
+/* CONTENIDO NOSOTROS */
 
 /* Parte izquierda */
 .title-h2--izq{
 	color: black;
-	padding:10px 0 10px 10px;
+	padding:10px 0 10px 30px;
 	font-style:bold;
 	font-size:30px;
-	
+/*
 	&:after{
 		content:' ';
     display:block;
     border:2px solid #49C1BC;
-	}
+	}*/
+}
+.hr-nosotros{
+	border:4px solid #49C1BC;
+	margin-top:45px;
 }
 .textoG{
 	font-size:18px;
@@ -150,6 +175,7 @@ ul.valores{
 			background-color:#909494;
 			padding:5px 10px;
 			font-size: 18px;
+			text-decoration:none;
 			&:hover{
 			background-color: rgba(85,96,95,0.6);
 		}
@@ -158,8 +184,6 @@ ul.valores{
 	}
 
 }	
-
-
 .title-h2--der{
 	background-color: #E89C3C;
 	color: white;
@@ -167,7 +191,6 @@ ul.valores{
 	padding:10px 0;
 	font-style:bold;
 	font-size:22px;
-	
 	margin-bottom: 0px ;
 }
 h3.subtitle-h3{
@@ -193,7 +216,6 @@ section.interFacultades{
 		/*border:1px solid blue;*/
 		text-align: center;
 		position: relative;
-		
 	}
 }
 .image1{
@@ -319,7 +341,7 @@ section.pics-c{
 	bottom:0;
 	height: auto;
 	width: 100%;
-	background-color: rgba(244,184,94,0.5);
+	background-color: rgba(244,184,94,0.8);
 	font-size: 12px;
 	color: white;
 	padding: 10px;
@@ -356,7 +378,7 @@ section.pics-c{
 }
 .texto-pic3{
 	@extend .texto-pic1;
-	background-color: rgba(241,96,98,0.5);
+	background-color: rgba(241,96,98,0.9);
 	/* &:hover{
 	// 	background-color: rgb(43,44,47);
 	/ }*/

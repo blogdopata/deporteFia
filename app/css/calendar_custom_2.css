@@ -34,11 +34,11 @@
 
 .custom-header {
 	background: #fff;
-	padding: 5px 10px 10px 20px;
+	padding: 5px 10px 80px 20px;
 	height: 70px;
 	position: relative;
-	border-top: 5px solid #ef4f69;
-	border-bottom: 1px solid #ddd;
+	border-top: 0px solid #ef4f69;
+	border: 1px solid #ddd;
 }
 
 .custom-header h2,
@@ -55,7 +55,7 @@
 }
 
 .custom-header h3 {
-	font-size: 10px;
+	font-size: 20px;
 	font-weight: 700;
 	color: #b7bbc2;
 }

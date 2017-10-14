@@ -4,14 +4,18 @@ head
 	meta(charset="UTF-8")
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 
-	link(rel="Shortcut Icon", href="http://www.usmp.edu.pe/images/logo.ico")
+	link(rel="Shortcut Icon", href="http://usmp.edu.pe/images/logo.ico")
+<!--	link(rel='stylesheet', type='text/css', href='css/demo.css')-->
+	link(rel='stylesheet', type='text/css', href='css/calendar.css')
+	link(rel='stylesheet', type='text/css', href='css/calendar_custom_2.css')
 	link(rel="stylesheet", href="css/bootstrap.css")
 	link(rel="stylesheet", href="css/slider.css")
 	link(rel="stylesheet", href="css/style.css")
-	link(rel="shortcut icon", href="images/logo.ico")
+	link(rel="shortcut icon", href="http://www.usmp.edu.pe/images/logo.ico")
 	script(src="js/jquery.js")
 	script(src="js/bootstrap.js")
 	script(src="js/myJS.js")
+	script(src='js/modernizr.custom.63321.js')
 	title Deportes FIA
 
 body
@@ -40,7 +44,8 @@ body
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='http://usmp.edu.pe/deportes/nosotros.html') NOSOTROS
+								a(href='http://usmp.edu.pe/deportes/nosotros.html') 
+									strong NOSOTROS
 							
 							li
 								a(href='http://usmp.edu.pe/deportes/interfacultades.html') INTERFACULTADES
@@ -59,9 +64,9 @@ body
 									span.caret
 								ul.dropdown-menu
 									li
-										a(href='#') Ciencias Administrativas  y RRHH
+										a(href='#') Ciencias Administrativas  y Recursos Humanos
 									li
-										a(href='#') Ciencias de la Comunicación, Turimos y Hotelería
+										a(href='#') Ciencias de la Comunicación, Turimos y Psicología
 									li
 										a(href='#') Ciencias Contables, Económicas y Financieras
 									li
@@ -77,30 +82,10 @@ body
 <!-- FIN  MENU --> 
 <!-- SLIDER -->
 
-	#myCarousel.carousel.slide(data-ride='carousel')
-		// Indicators
-		ol.carousel-indicators
-			li.active(data-target='#myCarousel', data-slide-to='0')
-			li(data-target='#myCarousel', data-slide-to='1')
-			li(data-target='#myCarousel', data-slide-to='2')
-			
-		// Wrapper for slides
-		.carousel-inner(role='listbox')
-			.item.active
-				img.img-responsive(src='images/pic1.jpg', alt='Pic slider 1', style='width:100%; height:38vh')
-			.item
-				img.img-responsive(src='images/pic2.jpg', alt='Pic slider 2', style='width:100%; height:38vh')
-			.item
-				img.img-responsive(src='images/pic3.jpg', alt='Pic slider 3', style='width:100%; height:38vh')
-			//.item
-				img.img-responsive(src='http://weddingplannershub.com/vendor/bower/wedding/branch_images/LtpmzAGTBWcxaoV_fMhT2PWFmgOZHPtd.jpg', alt='Chania', style='width:100%; height:38vh')
-		// Left and right controls
-		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-			span.sr-only Previous
-		a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-			span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-			span.sr-only Next
+	.container-fluid
+			.row
+				.col-md-12.fix-image--container
+					img.img-responsive.fix-image(src='images/portada-nosotros.jpg')
 
 	img.line-color(src="images/linea_colores.png", alt="Line of Colors")
 
@@ -111,8 +96,10 @@ body
 		div.row
 			//- div.col-md-9.col-md-push-0.col-sm-9.col-sm-push-3.col-xs-12.show-item(style="border:1px solid red",category="QS")
 			div.col-md-9.col-md-push-0.col-sm-9.col-sm-push-3.col-xs-12.show-item(category="QS")
-				h2.title-h2--izq  Somos
-
+				.row
+					h2.col-md-2.title-h2--izq Somos
+					div.col-md-10
+						hr.hr-nosotros
 				p.textoG La Universidad de San Martín de Porres promueve la práctica del deporte y recreación como factores educativos adicionales a la formación y desarrollo de los alumnos.
 				h2.subtitle-h2 Misión
 
@@ -120,7 +107,7 @@ body
 				
 				h2.subtitle-h2 Visión
 				p.textoG Posicionarnos como la universidad líder en la promoción y desarrollo de la práctica deportiva.
-
+			
 				h2.subtitle-h2 Valores
 				ul.valores
 					li Respeto
@@ -130,8 +117,10 @@ body
 					li Trabajo en equipo
 
 			div.col-md-9.col-md-push-0.col-sm-9.col-sm-push-3.col-xs-12.show-item(category="EQ" , style="display:none;")
-				h2.title-h2--izq  EQUIPO
-
+				.row
+					h2.col-md-4.title-h2--izq  Equipo de Trabajo
+					div.col-md-8
+						hr.hr-nosotros
 				h2.subtitle-h2 MIEMBROS DEL COMITÉ DEL PROGRAMA DEPORTIVO DE ALTA COMPETENCIA (PRODAC) DE LA UNIVERSIDAD DE SAN MARTÍN DE PORRES
 
 				
@@ -187,8 +176,18 @@ body
 				
 				h3.subtitle-h3 Calendario Deportivo
 				
-				iframe(src="https://www.google.com/calendar/embed?showTitle=0&showDate=0&showPrint=0&showTabs=0&showTz=0&mode=AGENDA&height=400&wkst=1&bgcolor=%233366ff&src=sfbs3iv5f751694al9ko5hn80g%40group.calendar.google.com" style="border-width:0" , width="100%" , height="200" , frameborder="0"  , scrolling="no")
-					
+				.container-two
+					section.main
+						div.custom-calendar-wrap
+								div#custom-inner.custom-inner
+								div.custom-header.clearfix
+									nav
+										span#custom-prev.custom-prev
+										span#custom-next.custom-next
+									h2#custom-month.custom-month
+									h3#custom-year.custom-year
+								div#calendar.fc-calendar-container
+
 <!-- FIN Contenido -->
 	hr.line-dashed
 <!-- Menu Pie -->
@@ -197,16 +196,16 @@ body
 			.col-md-10.col-md-offset-1
 				ul.submenu
 					li
-						a(href="#")  Contacto
+						a  Contacto
 						span.separate | 
 					li
-						a(href="#") Acerca de Nosotros 
+						a(href='http://usmp.edu.pe/deportes/nosotros.html') Acerca de Nosotros 
 						span.separate |
 					li
-						a(href="#") Preguntas Frencuentes 
+						a Preguntas Frencuentes 
 						span.separate |
 					li
-						a(href="#") Enlaces
+						a Enlaces
 <!-- Fin Menu Pie -->
 
 <!-- footer -->
@@ -214,4 +213,7 @@ body
 		.row
 			.col-md-6.col-md-offset-3 
 				p.footer--texto Universidad San Martin de Porres - Todos los Derechos Reservados
-	script(src="js/showContenido.js")
+	script(type='text/javascript', src='js/showContenido.js')
+	script(type='text/javascript', src='js/jquery.calendario.js')
+	script(type='text/javascript', src='js/data.js')
+	script(type='text/javascript', src='js/functionCalendar.js')

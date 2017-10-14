@@ -47,7 +47,8 @@ body
 								a(href='http://usmp.edu.pe/deportes/nosotros.html') NOSOTROS
 							
 							li
-								a(href='http://usmp.edu.pe/deportes/interfacultades.html') INTERFACULTADES
+								a(href='http://usmp.edu.pe/deportes/interfacultades.html') 
+									strong INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -63,9 +64,9 @@ body
 									span.caret
 								ul.dropdown-menu
 									li
-										a(href='#') Ciencias Administrativas  y RRHH
+										a(href='#') Ciencias Administrativas  y Recursos Humanos
 									li
-										a(href='#') Ciencias de la Comunicación, Turimos y Hotelería
+										a(href='#') Ciencias de la Comunicación, Turimos y Psicología
 									li
 										a(href='#') Ciencias Contables, Económicas y Financieras
 									li
@@ -81,30 +82,10 @@ body
 <!-- FIN  MENU --> 
 <!-- SLIDER -->
 
-	#myCarousel.carousel.slide(data-ride='carousel')
-		// Indicators
-		ol.carousel-indicators
-			li.active(data-target='#myCarousel', data-slide-to='0')
-			li(data-target='#myCarousel', data-slide-to='1')
-			li(data-target='#myCarousel', data-slide-to='2')
-			
-		// Wrapper for slides
-		.carousel-inner(role='listbox')
-			.item.active
-				img.img-responsive(src='images/pic1.jpg', alt='Pic slider 1', style='width:100%; height:38vh')
-			.item
-				img.img-responsive(src='images/pic2.jpg', alt='Pic slider 2', style='width:100%; height:38vh')
-			.item
-				img.img-responsive(src='images/pic3.jpg', alt='Pic slider 3', style='width:100%; height:38vh')
-			//.item
-				img.img-responsive(src='http://weddingplannershub.com/vendor/bower/wedding/branch_images/LtpmzAGTBWcxaoV_fMhT2PWFmgOZHPtd.jpg', alt='Chania', style='width:100%; height:38vh')
-		// Left and right controls
-		a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
-			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-			span.sr-only Previous
-		a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
-			span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-			span.sr-only Next
+	.container-fluid
+			.row
+				.col-md-12.fix-image--container
+					img.img-responsive.fix-image(src='images/portada-interfacultades.jpg')
 
 	img.line-color(src="images/linea_colores.png", alt="Line of Colors")
 
@@ -115,24 +96,24 @@ body
 		div.row
 			div.col-md-3.col-sm-6.col-xs-12.interFac
 				div.image1 
-					div.texto-interFac--A Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-A(href="#") ver más
+					//- div.texto-interFac--A Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+					//- 	a.link-A(href="#") ver más
 					div.title-interFac--A Ajedrez	
 
 			div.col-md-3.col-sm-6.col-xs-12.interFac
 				div.image2 
-					div.texto-interFac--B Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-B(href="#") ver más
+					//- div.texto-interFac--B Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+					//- 	a.link-B(href="#") ver más
 					div.title-interFac--B Basket
 			div.col-md-3.col-sm-6.col-xs-12.interFac
 				div.image3 
-					div.texto-interFac--F Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-F(href="#") ver más
+					//- div.texto-interFac--F Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+					//- 	a.link-F(href="#") ver más
 					div.title-interFac--F Futbol
 			div.col-md-3.col-sm-6.col-xs-12.interFac
 				div.image4 
-					div.texto-interFac--V Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
-						a.link-V(href="#") ver más
+					//- div.texto-interFac--V Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar Texto random a mostrar
+					//- 	a.link-V(href="#") ver más
 					div.title-interFac--V Voley
 	
 <!-- FIN Interfacultades -->
@@ -155,11 +136,11 @@ body
 
 			div.col-md-4
 
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+				iframe.video.hidden-xs.hidden-sm(width='100%',style="height:175px", src='https://www.youtube.com/embed/4qQq87HixWs', frameborder='0', allowfullscreen='')
+				iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/AUj-PEWAGIw', frameborder='0', allowfullscreen='')
 			div.col-md-4 
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
+				iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/sEfgOuDRv8Y', frameborder='0', allowfullscreen='')
+				//- iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
 <!-- Fin row calendar  -->
 
 
@@ -170,16 +151,16 @@ body
 			.col-md-10.col-md-offset-1
 				ul.submenu
 					li
-						a(href="#")  Contacto
+						a  Contacto
 						span.separate | 
 					li
-						a(href="#") Acerca de Nosotros 
+						a(href='http://usmp.edu.pe/deportes/nosotros.html') Acerca de Nosotros 
 						span.separate |
 					li
-						a(href="#") Preguntas Frencuentes 
+						a Preguntas Frencuentes 
 						span.separate |
 					li
-						a(href="#") Enlaces
+						a Enlaces
 <!-- Fin Menu Pie -->
 
 <!-- footer -->
