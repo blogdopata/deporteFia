@@ -81,6 +81,9 @@ img.line-color {
   width: 84%;
   margin: 60px auto 20px auto; }
 
+ul.navbar-nav li a.linkP {
+  font-weight: bold; }
+
 ul.submenu {
   display: inline-block;
   /*border:1px solid red;*/ }

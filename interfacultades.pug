@@ -43,42 +43,29 @@ body
 							span.icon-bar
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
-							li.active
-								a(href='http://usmp.edu.pe/deportes/nosotros.html') NOSOTROS
+							li: a(href='./nosotros.html') NOSOTROS
 							
-							li
-								a(href='http://usmp.edu.pe/deportes/interfacultades.html') 
-									strong INTERFACULTADES
+							li: a(href='./interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
 									span.caret
 								ul.dropdown-menu
-									li
-										a(href='#') Profesionales
-									li
-										a(href='#') Universitarios
+									li: a(href='#') Profesionales
+									li: a(href='#') Universitarios
 							li.dropdown
 								a.dropdown-toggle.active(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| EVENTOS 
 									span.caret
 								ul.dropdown-menu
-									li
-										a(href='#') Ciencias Administrativas  y Recursos Humanos
-									li
-										a(href='#') Ciencias de la Comunicación, Turimos y Psicología
-									li
-										a(href='#') Ciencias Contables, Económicas y Financieras
-									li
-										a(href='#') Derecho
-									li
-										a(href='#') Ingeniería y Arquitectura
-									li
-										a(href='#') Obstetrica y Enfermería
-									li
-										a(href='#') Medicina Humana
-									li
-										a(href='#') Odontología
+									li: a(href='#') Ciencias Administrativas  y Recursos Humanos
+									li: a(href='#') Ciencias de la Comunicación, Turismo y Psicología
+									li: a(href='#') Ciencias Contables, Económicas y Financieras
+									li: a(href='#') Derecho
+									li: a(href='#') Ingeniería y Arquitectura
+									li: a(href='#') Obstetrica y Enfermería
+									li: a(href='#') Medicina Humana
+									li: a(href='#') Odontología
 <!-- FIN  MENU --> 
 <!-- SLIDER -->
 
@@ -139,7 +126,7 @@ body
 				iframe.video.hidden-xs.hidden-sm(width='100%',style="height:175px", src='https://www.youtube.com/embed/4qQq87HixWs', frameborder='0', allowfullscreen='')
 				iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/AUj-PEWAGIw', frameborder='0', allowfullscreen='')
 			div.col-md-4 
-				iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/sEfgOuDRv8Y', frameborder='0', allowfullscreen='')
+				iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/OeZMgnAqEmk', frameborder='0', allowfullscreen='')
 				//- iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/9MqZCsdZS3E', frameborder='0', allowfullscreen='')
 <!-- Fin row calendar  -->
 
@@ -150,24 +137,17 @@ body
 		.row
 			.col-md-10.col-md-offset-1
 				ul.submenu
-					li
-						a  Contacto
+					li: a  Contacto
 						span.separate | 
-					li
-						a(href='http://usmp.edu.pe/deportes/nosotros.html') Acerca de Nosotros 
+					li: a(href='http://usmp.edu.pe/deportes/nosotros.html') Acerca de Nosotros 
 						span.separate |
-					li
-						a Preguntas Frencuentes 
+					li: a Preguntas Frencuentes 
 						span.separate |
-					li
-						a Enlaces
+					li: a Enlaces
 <!-- Fin Menu Pie -->
 
 <!-- footer -->
-	footer.container-fluid.footerP
-		.row
-			.col-md-6.col-md-offset-3 
-				p.footer--texto Universidad de San Martín de Porres - Todos los Derechos Reservados
+include partes/footer
 
 	script(type='text/javascript', src='js/jquery.calendario.js')
 	script(type='text/javascript', src='js/data.js')
