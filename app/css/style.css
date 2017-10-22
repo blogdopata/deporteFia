@@ -11,9 +11,12 @@ Medium devices Desktops (≥992px)	 COL-MD-
 Large devices Desktops (≥1200px)	 COL-LG-
 */
 body {
-  background-color: white;
+  background-color: red;
   color: #212529;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-color: yellow; } }
 
 /*
  [class*='col-']{
