@@ -50,7 +50,7 @@ gulp.task('serve',['sass'], function(){
 		gulp.watch(['scss/*.scss'], ['sass']);
 		/*compilara cambios a cualquier nivel */
 		/*gulp.watch(['./** /*.pug'],['pug']);*/
-		gulp.watch(['./*.pug'],['pug']);
+		gulp.watch(['./**/*.pug'],['pug']);
 });
 
 

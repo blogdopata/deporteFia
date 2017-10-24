@@ -11,9 +11,12 @@ Medium devices Desktops (≥992px)	 COL-MD-
 Large devices Desktops (≥1200px)	 COL-LG-
 */
 body {
-  background-color: white;
+  /*background-color: red;*/
   color: #212529;
   font-family: "Roboto", sans-serif; }
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-color: yellow; } }
 
 /*
  [class*='col-']{
@@ -38,7 +41,7 @@ body {
     width: 300px;
     /*border:1px solid red;*/ }
 
-.form {
+.h2-text {
   height: 120px;
   display: none;
   -webkit-box-orient: horizontal;
@@ -367,7 +370,7 @@ section.pics-c {
 
 /* FIN INDEX 2 TEST */
 .navbar, .dropdown-menu {
-  background-color: #BA4B57; }
+  background-color: #821E37; }
 
 .nav > li > a, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a, .dropdown-menu > li {
   /*border-bottom: 3px solid transparent;*/ }
@@ -419,19 +422,19 @@ section.pics-c {
         .navbar-nav li li a:hover {
           color: black; }
   .navbar-wrapper {
-    background: #BA4B57;
+    background: #821E37;
     padding: 0;
     margin: 0; }
   .navbar {
     margin-bottom: 0;
-    background-color: #BA4B57; } }
+    background-color: #821E37; } }
 
 @media only screen and (min-width: 1200px) {
   body {
     background-color: white; }
   .logo img {
     width: 369px; }
-  .form {
+  .h2-text {
     height: 120px;
     display: -webkit-box;
     display: -ms-flexbox;

@@ -12,9 +12,12 @@ Large devices Desktops (≥1200px)	 COL-LG-
 */
 
 body{
-	background-color: white;
+	/*background-color: red;*/
 	color: $color-text;
 	font-family: $font-pricipal;
+	@include desktop-lg{
+		background-color:yellow;
+	}
 }
 /*
  [class*='col-']{
@@ -41,7 +44,7 @@ body{
 		/*border:1px solid red;*/
 	}
 }
-.form{
+.h2-text{
 	height:120px;
 	display:none;
 	flex-direction:row;
@@ -453,21 +456,25 @@ section.pics-c{
 }
 
 
-
-
 /* FIN INDEX 2 TEST */
 
 
 @import 'menu';
 
+@include desktop-md{
+	body{
+		
+	}
+}
+
 @include desktop-lg{
 	body{
-		background-color: white;
+		background-color:white;
 	}
 	.logo img{
 		width:369px;		
 	}
-	.form{
+	.h2-text{
 		height:120px;
 		display:flex;
 		flex-direction:row;
@@ -479,6 +486,8 @@ section.pics-c{
 	display:inline-block;
 	}
 }
+
+
 
 
 

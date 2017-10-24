@@ -7,6 +7,12 @@
 		@content;
 	}
 }
+
+@mixin desktop-md{
+	@media only screen and (min-width:#{$desktop-md}){
+		@content;
+	}
+}
 @mixin tablet {
 	@media only screen and (min-width:#{$tablet}){
 	/*Esta directiva para agregar contenido  @content*/ 
