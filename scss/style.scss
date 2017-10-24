@@ -12,7 +12,7 @@ Large devices Desktops (≥1200px)	 COL-LG-
 */
 
 body{
-	background-color: red;
+	/*background-color: red;*/
 	color: $color-text;
 	font-family: $font-pricipal;
 	@include desktop-lg{
@@ -44,7 +44,7 @@ body{
 		/*border:1px solid red;*/
 	}
 }
-.form{
+.h2-text{
 	height:120px;
 	display:none;
 	flex-direction:row;
@@ -474,7 +474,7 @@ section.pics-c{
 	.logo img{
 		width:369px;		
 	}
-	.form{
+	.h2-text{
 		height:120px;
 		display:flex;
 		flex-direction:row;

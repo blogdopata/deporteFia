@@ -16,16 +16,10 @@ head
 	
 body
 	.line 
-<!-- Cabecera --> 
-	header.container
-		.row
-			figure.col-md-6.logo
-				a(href="http://usmp.edu.pe/deportes/")
-					img(src='images/fiaDeportesLogo.png', alt='Fia Deportes')
-			//- form.col-md-3.col-md-offset-3.form(action='')
-			//- 	input(type='text', placeholder='Buscar')
-<!-- FIN Cabecera --> 
-
+<!-- header --> 
+include partes/header
+<!-- FIN header --> 
+ 
 <!--  INICIO MENU --> 
 	.navbar-wrapper
 		.container.containerFix
@@ -127,20 +121,7 @@ body
 					li: a Enlaces
 
 <!-- Fin Menu Pie -->
-var user = { description: 'foo bar baz' }
-var authorised = false
-#user
-	if user.description
-		h2.green Description
-		p.description= user.description
-	else if authorised
-		h2.blue Description
-		p.description.
-      User has no description,
-      why not add one...
-	else
-		h2.red Description
-		p.description User has no description
+
 <!-- footer -->
 include partes/footer
 
