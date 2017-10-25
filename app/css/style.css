@@ -26,12 +26,19 @@ Large devices Desktops (≥1200px)	 COL-LG-
 body {
   /*background-color: red;*/
   color: #212529;
+<<<<<<< HEAD
   font-family: "Roboto", sans-serif;
   /*	
 	// @include desktop-lg{
 	// 	background-color:yellow;
 	// }
 */ }
+=======
+  font-family: "Roboto", sans-serif; }
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-color: yellow; } }
+>>>>>>> origin/master
 
 /*
  [class*='col-']{
@@ -422,11 +429,15 @@ section.pics-c {
   body {
     background-color: white; }
   .logo img {
+<<<<<<< HEAD
     width: 200px;
     /*background-color:red;*/
     padding: 0;
     /*border:1px solid green;*/
     margin-top: -10px; }
+=======
+    width: 369px; }
+>>>>>>> origin/master
   .h2-text {
     height: 120px;
     display: -webkit-box;
