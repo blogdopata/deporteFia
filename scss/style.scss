@@ -17,17 +17,13 @@ body{
 	/*background-color: red;*/
 	color: $color-text;
 	font-family: $font-pricipal;
-<<<<<<< HEAD
+
 /*	
 	// @include desktop-lg{
 	// 	background-color:yellow;
 	// }
 */
-=======
-	@include desktop-lg{
-		background-color:yellow;
-	}
->>>>>>> origin/master
+
 }
 /*
  [class*='col-']{
@@ -422,9 +418,6 @@ section.pics-c{
 				
 	}
 }
-
-
-
 
 
 @import 'menu';
