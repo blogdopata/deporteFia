@@ -1,9 +1,22 @@
 @charset "UTF-8";
 /* Mis Fonts :D */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+/* FONTS */
 /*Web Colors :D */
 /* Medias queries */
 /*  Mixins para los media QUERIOES */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.otf") format("opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url("../fonts/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Bold.otf") format("opentype"), url("../fonts/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*
 Extra small devices Phones (<768px)	 COL-XS-
 Small devices Tablets (≥768px)     COL-SM-
@@ -13,10 +26,12 @@ Large devices Desktops (≥1200px)	 COL-LG-
 body {
   /*background-color: red;*/
   color: #212529;
-  font-family: "Roboto", sans-serif; }
-  @media only screen and (min-width: 1200px) {
-    body {
-      background-color: yellow; } }
+  font-family: "Roboto", sans-serif;
+  /*	
+	// @include desktop-lg{
+	// 	background-color:yellow;
+	// }
+*/ }
 
 /*
  [class*='col-']{
@@ -55,10 +70,6 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-input[type="text"] {
-  padding: 2px 10px;
-  font-style: italic; }
-
 /* .navbar*/
 .navbar {
   margin-bottom: 0; }
@@ -70,14 +81,27 @@ input[type="text"] {
   margin: 0; }
   .fix-image--container .fix-image {
     width: 100%;
-    height: 40vh; }
+    height: 30vh; }
 
-img.line-color {
-  width: 100%;
-  vertical-align: top; }
+/*
+// img.line-color{
+// 	width:100%;
+// 	vertical-align:top;
+// }
+*/
+.container-frase {
+  background-color: #E6E7E8;
+  margin-top: 0; }
+  .container-frase .text-frase {
+    text-align: center;
+    /*border:1px solid red;*/
+    margin-top: 0;
+    padding: 25px;
+    font-style: italic; }
 
 .video {
-  margin-top: 20px; }
+  margin-bottom: 20px;
+  height: 210px; }
 
 .line-dashed {
   border: 1px dashed black;
@@ -93,11 +117,12 @@ ul.submenu {
 
 .submenu li {
   display: inline-block;
-  margin: 5px 30px;
+  margin: 5px 5px;
   font-size: 20px;
   /*border:1px solid red;*/ }
   .submenu li a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #6D6E70; }
 
 span.separate {
   margin-left: 35px;
@@ -274,101 +299,65 @@ section.interFacultades {
   background-color: #600736; }
 
 /* FIN  Interfacultades */
-/* INDEX 2 TEST */
+/* GRID INDEX NOTAS */
 section.pics-c {
-  margin-top: 25px; }
+  margin-top: 45px; }
 
-.pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7 {
+.pic1, .pic2 {
   width: auto;
-  height: 240px;
-  position: relative;
+  height: 336px;
   margin: 0 auto;
-  background-image: url("../images/pic-1.jpg");
+  background-image: url("../images/picNota1.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  /* border:1px solid red;*/ }
 
-.texto-pic1, .texto-pic3, .texto-pic4, .texto-pic6, .texto-pic7 {
-  position: absolute;
-  bottom: 0;
+.texto-pic1, .texto-pic2 {
   height: auto;
   width: 100%;
-  background-color: rgba(244, 184, 94, 0.8);
+  background-color: black;
   font-size: 12px;
   color: white;
-  padding: 10px;
+  padding: 10px 10px 80px 10px;
   text-align: justify;
-  font-family: "Roboto", sans-serif;
-  /* &:hover{
-	// 	background-color: rgb(43,44,47);
-	/ }*/ }
-  .texto-pic1 .link-pic1, .texto-pic3 .link-pic1, .texto-pic4 .link-pic1, .texto-pic6 .link-pic1, .texto-pic7 .link-pic1, .texto-pic3 .link-pic3, .texto-pic4 .link-pic4, .texto-pic6 .link-pic6, .texto-pic7 .link-pic7 {
-    background-color: #52BCBB;
-    display: inline-block;
-    float: right;
+  font-family: "Roboto", sans-serif; }
+  .texto-pic1 h3, .texto-pic2 h3 {
+    /*border:1px solid red;*/
+    font-size: 28px;
+    padding: 5px 20px; }
+  .texto-pic1 p.fecha, .texto-pic2 p.fecha {
+    padding: 5px 20px;
+    font-size: 14px; }
+  .texto-pic1 p.text-review, .texto-pic2 p.text-review {
+    padding: 5px 20px;
+    font-size: 22px; }
+  .texto-pic1 .link-pic1, .texto-pic2 .link-pic1, .texto-pic2 .link-pic2 {
+    background-color: #821E37;
     font-weight: bold;
     color: white;
     padding: 5px;
     /*border:1px solid red;*/
-    margin: 10px 10px 0 0; }
+    margin: 40px 10px 0 0;
+    text-decoration: none;
+    float: right; }
 
 .pic2 {
-  height: 120px;
-  background-image: url("../images/pic-2.jpg");
-  margin-top: 20px; }
+  height: 188px;
+  background-image: url("../images/picNota2.jpg"); }
 
-.pic3 {
-  height: 380px;
-  background-image: url("../images/pic-3.jpg"); }
+.texto-pic2 {
+  padding: 10px 10px 10px 10px; }
+  .texto-pic2 h3 {
+    font-size: 18px;
+    padding: 0px 20px; }
+  .texto-pic2 p.text-review {
+    font-size: 14px;
+    margin: 0; }
+  .texto-pic2 .link-pic2 {
+    margin: -20px 0px 0 0;
+    padding: 3px; }
 
-.texto-pic3 {
-  background-color: rgba(241, 96, 98, 0.9);
-  /* &:hover{
-	// 	background-color: rgb(43,44,47);
-	/ }*/ }
-  .texto-pic3 .link-pic3 {
-    background-color: #50B26F; }
-
-.pic4 {
-  height: 300px;
-  background-image: url("../images/pic-4.jpg"); }
-
-.texto-pic4 {
-  background-color: rgba(76, 186, 123, 0.8);
-  /* &:hover{
-	// 	background-color: rgb(43,44,47);
-	/ }*/ }
-  .texto-pic4 .link-pic4 {
-    background-color: #F6BC57; }
-
-.pic5 {
-  height: 100px;
-  background-image: url("../images/pic-5.jpg"); }
-
-.pic6 {
-  height: 350px;
-  background-image: url("../images/pic-6.jpg"); }
-
-.texto-pic6 {
-  background-color: rgba(76, 186, 123, 0.8);
-  /* &:hover{
-	// 	background-color: rgb(43,44,47);
-	/ }*/ }
-  .texto-pic6 .link-pic6 {
-    background-color: #D64755; }
-
-.pic7 {
-  height: 350px;
-  background-image: url("../images/pic-7.jpg"); }
-
-.texto-pic7 {
-  background-color: rgba(241, 96, 98, 0.5);
-  /* &:hover{
-	// 	background-color: rgb(43,44,47);
-	/ }*/ }
-  .texto-pic7 .link-pic7 {
-    background-color: #52BCBB; }
-
-/* FIN INDEX 2 TEST */
+/* FIN GRID ITEMS NOTAS */
 .navbar, .dropdown-menu {
   background-color: #821E37; }
 
@@ -433,7 +422,11 @@ section.pics-c {
   body {
     background-color: white; }
   .logo img {
-    width: 369px; }
+    width: 200px;
+    /*background-color:red;*/
+    padding: 0;
+    /*border:1px solid green;*/
+    margin-top: -10px; }
   .h2-text {
     height: 120px;
     display: -webkit-box;
@@ -448,10 +441,29 @@ section.pics-c {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    /*border:1px solid red;*/ }
+  .h2-text img {
+    /*border:1px solid red;*/
+    z-index: 10;
+    height: 120px; }
+  .h2-text h2 {
+    color: #393838;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: "MyriadPro-Bold"; }
   span.separate {
     margin-left: 30px;
-    display: inline-block; } }
+    display: inline-block; }
+  .container-frase {
+    background-color: #E6E7E8;
+    margin-top: 0; }
+    .container-frase .text-frase {
+      text-align: center;
+      /*border:1px solid red;*/
+      margin-top: 0;
+      padding: 25px;
+      font-style: italic; } }
 
 /*.test{
 	@include tablet{

@@ -1,6 +1,9 @@
 
-
+/* FONTS */ 
 $font-pricipal: 'Roboto', sans-serif;
+$mPro-regular:'MyriadPro-Regular';
+$mPro-bold:'MyriadPro-Bold';
+
 /*Web Colors :D */ 
 $color-fondo:		white;
 $color-text:    #212529;
@@ -8,7 +11,8 @@ $color-titulos: #8C1212;
 $color-linea: #7C777A;
 $color-row: red;
 $color-bk-menu: #821E37;
-$color-footer: #891531;
+$color-fondo-links:$color-bk-menu;
+$color-footer: #821E37;
 
 /* Medias queries */
 

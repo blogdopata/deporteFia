@@ -17,7 +17,9 @@ head
 body
 	.line 
 <!-- header --> 
+
 include partes/header
+
 <!-- FIN header --> 
  
 <!--  INICIO MENU --> 
@@ -33,7 +35,7 @@ include partes/header
 							span.icon-bar
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
-							li: a(href='./nosotros.html').linkP NOSOTROS
+							li: a(href='./nosotros.html') NOSOTROS
 							
 							li: a(href='./interfacultades.html') INTERFACULTADES
 							li.dropdown
@@ -63,9 +65,10 @@ include partes/header
 	.container-fluid
 		.row
 			.col-md-12.fix-image--container
-				img.img-responsive.fix-image(src='images/portada-index.jpg')
+				img.img-responsive.fix-image(src='images/pic1-a.jpg')
 
-	img.line-color(src="images/linea_colores.png", alt="Line of Colors")
+	div.container-frase
+		h2.text-frase “Amamos lo que hacemos, amamos los deportes”.
 
 <!-- FIN SLIDER -->	
 
@@ -73,44 +76,38 @@ include partes/header
 	section.container.pics-c
 		div.row
 			div.col-md-6
-				div.row
-					div.col-md-6
-						div.pic1
-							div.texto-pic1 Reconocimiento al equipo campeón y subcampeón del Torneo Interno de Vóley  realizado en la Facultad de Derecho de la USMP.
-								a.link-pic1 ver más
-						div.pic2.hidden-xs.hidden-sm
-									
-					div.col-md-6.hidden-sm
-						div.pic3.hidden-xs.hidden-sm
-							div.texto-pic3 Brenda Tasayco se coronó como campeona en el Torneo Interno de Ajedrez realizado en la Facultad de Derecho de la USMP. 
-								a.link-pic3 ver más
+				div.pic1
+				div.texto-pic1 
+					h3 INAUGURACIÓN DE LOS JUEGOS DEPORTIVOS INTERFACULTADES 2017
+					p.fecha 14 de octubre de 2017
+					p.text-review El pasado sábado 14 de octubre se realizó con éxito la inauguración de los juegos deportivos Interfacultades ...
+						a.link-pic1 Leer más	
+						
+			div.col-md-3
+					div.pic2
+					div.texto-pic2 
+						h3 INTERFACULTADES 2017 VÓLEY DAMAS: La FIA 
+						p.text-review Logró quedar como primera en la tabla de posiciones.
+						a.link-pic2 Leer más	
 
-					div.col-md-12
-						div.pic4(style="margin-top:20px;")
-							div.texto-pic4 “Los Destructores”, equipo ganador en el Torneo Interno de Básquet de la Facultad de Derecho de la USMP
-								a.link-pic4 ver más	
-	
-			div.col-md-6
-				div.row
-					div.col-md-6
-						div.pic5
-						iframe.video.hidden-xs.hidden-sm(width='100%',style="height:175px", src='https://www.youtube.com/embed/4qQq87HixWs', frameborder='0', allowfullscreen='')
-						iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/AUj-PEWAGIw', frameborder='0', allowfullscreen='')
-						iframe.video(width='100%',style="height:175px", src='https://www.youtube.com/embed/OeZMgnAqEmk', frameborder='0', allowfullscreen='')
-					div.col-md-6
-						div.pic6.hidden-xs.hidden-sm
-							div.texto-pic6 Oscar Puente, alumno de la carrera de Ingeniería Civil, es el campeón del Primer Torneo Interno de Ajedrez de la Facultad de Ingeniería y Arquitectura.
-								a.link-pic6(href="#") ver más
-						div.pic7
-							div.texto-pic7 Pasión y constancia demostraron los equipos de Facultad de Ciencias de la Comunicación, Turismo y Psicología de la USMP  durante el Campeonato de Fútbol 2017
-								a.link-pic7 ver más
+					div.pic2(style="margin-top:10px;")
+					div.texto-pic2 
+						h3 PRIMER TORNEO DE AJEDREZ - FIA 2017
+						p.text-review Oscar Puente, alumno de la carrera de Ingeniería Civil, se coronó ...
+						a.link-pic2 Leer más	
+
+			div.col-md-3
+				iframe.video.hidden-xs.hidden-sm(width='100%', src='https://www.youtube.com/embed/kPTmm9PVl3c', frameborder='0', allowfullscreen='')
+				iframe.video(width='100%', src='https://www.youtube.com/embed/AUj-PEWAGIw', frameborder='0', allowfullscreen='')
+				iframe.video(width='100%', src='https://www.youtube.com/embed/OeZMgnAqEmk', frameborder='0', allowfullscreen='')
+				
 
 <!-- FIN GRID D ITEMSS -->
 	hr.line-dashed
 <!-- Menu Pie -->
 	section.container
 		.row
-			.col-md-10.col-md-offset-1
+			.col-md-9
 				ul.submenu
 					li: a  Contacto
 						span.separate | 
@@ -119,7 +116,16 @@ include partes/header
 					li: a Preguntas Frencuentes 
 						span.separate |
 					li: a Enlaces
-
+			.col-md-3
+				div.redes
+					a(href="#")
+						img(src="images/facebook.jpg", alt="")
+					a(href="#")
+						img(src="images/insta.jpg", alt="")
+					a(href="#")
+						img(src="images/tuiter.jpg", alt="")
+					a(href="#")
+						img(src="images/utube.jpg", alt="")
 
 <!-- Fin Menu Pie -->
 
