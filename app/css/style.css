@@ -216,96 +216,20 @@ h3.subtitle-h3 {
 
 /* FIN CONTENIDO */
 /* Interfacultades */
-section.interFacultades {
-  /*border:1px solid red;*/
-  max-width: 1000px;
-  margin-top: 50px; }
-  section.interFacultades .interFac {
-    /*border:1px solid blue;*/
-    text-align: center;
-    position: relative; }
-
-.image1, .image2, .image3, .image4 {
-  background-repeat: no-repeat;
-  width: 212px;
-  height: 584px;
-  position: relative;
-  margin: 0 auto;
-  background-image: url("../images/interFac1.jpg"); }
-
-.image2 {
-  background-image: url("../images/interFac2.jpg"); }
-
-.image3 {
-  background-image: url("../images/interFac3.jpg"); }
-
-.image4 {
-  background-image: url("../images/interFac4.jpg"); }
-
-.texto-interFac--A, .texto-interFac--B, .texto-interFac--F, .texto-interFac--V {
-  position: absolute;
-  bottom: 0;
-  height: auto;
-  width: 100%;
-  background-color: rgba(43, 44, 47, 0.9);
-  font-size: 14px;
-  color: white;
-  padding: 15px;
-  /* &:hover{
-			// 	background-color: rgb(43,44,47);
-			/ }*/ }
-  .texto-interFac--A .link-A, .texto-interFac--B .link-A, .texto-interFac--F .link-A, .texto-interFac--V .link-A, .texto-interFac--B .link-B, .texto-interFac--F .link-F, .texto-interFac--V .link-V {
-    background-color: #52BCBB;
-    display: inline-block;
-    float: right;
-    font-weight: bold;
-    color: white;
-    padding: 5px;
-    margin: 20px 0 35px 0; }
-
-.title-interFac--A, .title-interFac--B, .title-interFac--F, .title-interFac--V {
-  background-color: #2B2C2F;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 10px 0 0 0;
-  padding: 10px 0;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif; }
-
-.texto-interFac--B {
-  background-color: rgba(180, 80, 45, 0.6); }
-  .texto-interFac--B .link-B {
-    background-color: #50B26F; }
-
-.title-interFac--B {
-  background-color: #B4502D; }
-
-.texto-interFac--F {
-  background-color: rgba(14, 90, 45, 0.6); }
-  .texto-interFac--F .link-F {
-    background-color: #F6BC57; }
-
-.title-interFac--F {
-  background-color: #0E5A2D; }
-
-.texto-interFac--V {
-  background-color: rgba(96, 7, 54, 0.6); }
-  .texto-interFac--V .link-V {
-    background-color: #D5404E; }
-
-.title-interFac--V {
-  background-color: #600736; }
+h2.subTitle {
+  color: #3B3A3A;
+  font-family: "MyriadPro-Regular";
+  font-size: 48px;
+  border: 1px solid red;
+  margin: 60px 0 20px 0; }
 
 /* FIN  Interfacultades */
 /* GRID INDEX NOTAS */
 section.pics-c {
   margin-top: 45px; }
 
-.pic1, .pic2 {
-  width: auto;
+.pic1, .pic2, .pic3 {
+  width: 100%;
   height: 336px;
   margin: 0 auto;
   background-image: url("../images/picNota1.jpg");
@@ -343,6 +267,7 @@ section.pics-c {
     float: right; }
 
 .pic2 {
+  width: 100%;
   height: 188px;
   background-image: url("../images/picNota2.jpg"); }
 
@@ -357,6 +282,10 @@ section.pics-c {
   .texto-pic2 .link-pic2 {
     margin: -20px 0px 0 0;
     padding: 3px; }
+
+.pic3 {
+  height: 188px;
+  background-image: url("../images/picNota3.jpg"); }
 
 .navbar, .dropdown-menu {
   background-color: #821E37; }
