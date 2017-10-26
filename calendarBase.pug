@@ -19,7 +19,21 @@ head
 body 
 	h1.test soy del index 2
 
-	p #{name}'s Pug source code!
+	section.container.interFacultades
+		div.row
+			div.col-md-4 
+				//- h3.subtitle-h3 Calendario Deportivo
+				.container-two
+					section.main
+						div.custom-calendar-wrap
+								div#custom-inner.custom-inner
+								div.custom-header.clearfix
+									nav
+										span#custom-prev.custom-prev
+										span#custom-next.custom-next
+									h2#custom-month.custom-month
+									h3#custom-year.custom-year
+								div#calendar.fc-calendar-container
 
 	script(type='text/javascript', src='js/jquery.calendario.js')
 	script(type='text/javascript', src='js/data.js')

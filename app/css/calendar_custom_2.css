@@ -232,6 +232,7 @@
 	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
+
 .fc-calendar .fc-row > div.fc-content:after {
 	content: '\00B7';
 	text-align: center;
@@ -262,7 +263,14 @@
 	display: none;
 	font-size: 22px;
 }
-
+/* AGREGADO X VICTOR CABALLERO */
+.fc-content{
+	background-color: #AFAFB2 !important;
+}
+.fc-today{
+	background-color: #EF4F69 !important;
+}
+/* FIN  X VICTOR CABALLERO */
 @media screen and (max-width: 400px) {
 	.fc-calendar-container {
 		height: 300px;

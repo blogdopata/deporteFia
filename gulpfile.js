@@ -7,9 +7,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var pug = require('gulp-pug');
 
 
-
-
-
 //Primera tarea
 
 gulp.task('pug',function(){

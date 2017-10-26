@@ -4,5 +4,6 @@ var codropsEvents = {
 	//'01-01-YYYY' : '<span><h3>¡Feliz Año Nuevo!</h3></span>',
 	'10-14-2017' : '<span>Inauguración Interfacultades</span>',
 	//'10-14-2017' : '<span><h3>Inicio de Torneo</h3>  </span>',
-//	'11-DD-2017' : {content : '<span><h3>Empezaron los torneos</h3></span>', startDate : 1, endDate : 10},
+	'10-DD-2017' : {content : '<span><h3>Torneo Interfacultades</h3></span>', startDate : 14, endDate : 31},
+	'11-DD-2017' : {content : '<span><h3>Torneo Interfacultades</h3></span>', startDate : 1, endDate : 5},
 };

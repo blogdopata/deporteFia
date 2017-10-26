@@ -238,6 +238,72 @@ h2.subTitle{
 	border:1px solid red;
 	margin: 60px 0 20px 0;
 }
+h4.h4-title{
+	font-family:$mPro-bold;
+	font-size:22px;
+}
+a.linkN{
+	text-decoration:none;
+	float:right;
+}
+
+.multimedia{
+	border-top:3px solid #727272;
+	background-color:#F8F5F6;
+	.multimedia-content{
+		margin-left:20px;
+		padding:5px 10px;
+		a{
+			text-decoration:none;
+			span{
+				margin-left:10px;
+				font-size:20px;
+				color:black;
+			}
+		}
+	}
+}
+.line-multi{
+	width:90%;
+	border:1px solid #A29FA1;
+	margin:0 auto;
+	padding:0;
+}
+.fixture-sel{
+	border:0px solid #727272;
+	margin-top:20px;
+	background-color:#F8F5F6;
+	.tabla-pos{
+		display:inline-block;
+		width:175px;
+		text-align:center;
+		padding:6px 0;
+		text-decoration:none;
+		background-color:#595759;
+		color:white;
+		font-size:14px;
+	}
+	.tabla-prox{
+		display:inline-block;
+		width:175px;
+		text-align:center;
+		padding:10px 0;
+		text-decoration:none;
+		font-size:14px;
+	}
+}
+.fixture-body{
+	background-color: #E1E2E2;
+	padding:0 15px;
+	.fixture-content{
+		margin-top:8px;margin-left:80px;
+		span{
+			font-size:18px;margin-left:10px;
+
+		}
+	}
+}
+
 
 
 /* FIN  Interfacultades */ 

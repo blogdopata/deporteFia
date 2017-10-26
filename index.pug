@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+doctype html
 html(lang="es")
 head
 	meta(charset="UTF-8")
@@ -6,7 +6,7 @@ head
 
 	link(rel="Shortcut Icon", href="http://www.usmp.edu.pe/images/logo.ico")
 	link(rel="stylesheet", href="css/bootstrap.css")
-	link(rel="stylesheet", href="css/slider.css")
+	//- link(rel="stylesheet", href="css/slider.css")
 	link(rel="stylesheet", href="css/style.css")
 	link(rel="shortcut icon", href="images/logo.ico")
 	script(src="js/jquery.js")
@@ -104,31 +104,11 @@ include partes/header
 
 <!-- FIN GRID D ITEMSS -->
 	hr.line-dashed
-<!-- Menu Pie -->
-	section.container
-		.row
-			.col-md-9
-				ul.submenu
-					li: a  Contacto
-						span.separate | 
-					li: a(href='http://usmp.edu.pe/deportes/nosotros.html') Acerca de Nosotros 
-						span.separate |
-					li: a Preguntas Frencuentes 
-						span.separate |
-					li: a Enlaces
-			.col-md-3
-				div.redes
-					a(href="#")
-						img(src="images/facebook.jpg", alt="")
-					a(href="#")
-						img(src="images/insta.jpg", alt="")
-					a(href="#")
-						img(src="images/tuiter.jpg", alt="")
-					a(href="#")
-						img(src="images/utube.jpg", alt="")
+<!-- Redes-->
 
+include partes/redes
 
-<!-- Fin Menu Pie -->
+<!-- Fin Redes -->
 
 <!-- footer -->
 include partes/footer

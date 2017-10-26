@@ -167,7 +167,7 @@
           console.info(calendario.msg);
       })
       .fail(function(jqxhr, settings, exception){
-        console.error(exception);
+       /* console.error(exception);*/
       });
     },
     
