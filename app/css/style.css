@@ -34,6 +34,9 @@ body {
 	// }
 */ }
 
+a:focus {
+  outline: 0px; }
+
 /*
  [class*='col-']{
 	border: 1px solid blue;
@@ -220,7 +223,7 @@ h2.subTitle {
   color: #3B3A3A;
   font-family: "MyriadPro-Regular";
   font-size: 48px;
-  border: 1px solid red;
+  /*border:1px solid red;*/
   margin: 60px 0 20px 0; }
 
 h4.h4-title {
@@ -253,23 +256,28 @@ a.linkN {
 .fixture-sel {
   border: 0px solid #727272;
   margin-top: 20px;
-  background-color: #F8F5F6; }
+  background-color: #F8F5F6;
+  text-align: center; }
   .fixture-sel .tabla-pos {
     display: inline-block;
-    width: 175px;
+    width: 180px;
     text-align: center;
     padding: 6px 0;
     text-decoration: none;
-    background-color: #595759;
+    background: #595759;
     color: white;
-    font-size: 14px; }
+    font-size: 14px;
+    cursor: pointer; }
   .fixture-sel .tabla-prox {
     display: inline-block;
-    width: 175px;
+    cursor: pointer;
+    width: 179px;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 6px 0;
     text-decoration: none;
-    font-size: 14px; }
+    font-size: 14px;
+    background: #595759; }
 
 .fixture-body {
   background-color: #E1E2E2;
@@ -277,9 +285,14 @@ a.linkN {
   .fixture-body .fixture-content {
     margin-top: 8px;
     margin-left: 80px; }
-    .fixture-body .fixture-content span {
-      font-size: 18px;
-      margin-left: 10px; }
+    .fixture-body .fixture-content a {
+      text-decoration: none; }
+      .fixture-body .fixture-content a span {
+        font-size: 18px;
+        margin-left: 10px; }
+
+.selected {
+  background: #282A2C !important; }
 
 /* FIN  Interfacultades */
 /* GRID INDEX NOTAS */

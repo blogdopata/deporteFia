@@ -65,14 +65,14 @@ include partes/header
 <!-- FIN  MENU --> 
 
 
-	div.container(style="border:1px solid red;")
+	div.container
 		div.row
 			div.col-md-10.col-md-offset-1
 				h2.subTitle Interfacultades		
 	
-	div.container(style="border:1px solid red;margin-top:25px;")
+	div.container(style="margin-top:25px;")
 		div.row
-			div.col-md-7.col-md-offset-1(style="border:1px solid blue;")
+			div.col-md-7.col-md-offset-1
 				div.row(style="margin-bottom:20px;")
 					div.col-md-4
 						img.img-responsive(src="images/noticia1.jpg", alt="")
@@ -86,7 +86,7 @@ include partes/header
 				hr(style="border:1px solid #A29FA1;")
 				div.row(style="margin-bottom:20px;")
 					div.col-md-4
-						img.img-responsive(src="images/noticia1.jpg", alt="")
+						img.img-responsive(src="images/noticia2.jpg", alt="")
 					div.col-md-8
 						h4.h4-title INAUGURACIÓN DEL INTERFACULTADES 2017
 
@@ -96,7 +96,7 @@ include partes/header
 				hr(style="border:1px solid #A29FA1;")
 				div.row(style="margin-bottom:20px;")
 					div.col-md-4
-						img.img-responsive(src="images/noticia1.jpg", alt="")
+						img.img-responsive(src="images/noticia3.jpg", alt="")
 					div.col-md-8
 						h4.h4-title EE.GG VS FIA
 						p Estudios Generales y la facultad de Ingeniería y Arquitectura jugaron el partido inaugural de este evento deportivo, siendo la FIA el equipo goleador de la primera fecha.
@@ -121,32 +121,54 @@ include partes/header
 					hr.line-multi
 
 					div.multimedia-content
-						a(href="#")
+						a(href="#",data-toggle="modal" data-target="#video")
 							img(src="images/icons/camara.png", alt="camara pic")
 							span Videos (1)
 				
 				div.fixture-sel
-					a.tabla-pos(href="#") TABLA DE <br> POSICIONES 
-					a.tabla-prox(href="#") PRÓXIMOS  <br> RESULTADOS
+					a.tabla-pos.category_item.selected(category="QS") TABLA DE <br> POSICIONES 
+					a.tabla-prox.category_item.selected(category="EQ") PRÓXIMOS  <br> RESULTADOS
 
-				div.panel-body.fixture-body
+				div.panel-body.fixture-body.show-item(category="QS")
 					div.fixture-content
-						a(href='', style='', data-toggle='modal', data-target='#ajedrez')
+						a(href='', data-toggle='modal', data-target='#ajedrez')
 							img(src='images/icons/ajedrez.png', width='40px')
 							span AJEDREZ
 
 					div.fixture-content
-						a(href='', style='', data-toggle='modal', data-target='#basquet')
+						a(href='',  data-toggle='modal', data-target='#basquet')
 							img(src='images/icons/basquet.png', width='40px')
 							span BÁSQUET
 
 					div.fixture-content
-						a(href='', style='', data-toggle='modal', data-target='#futbol')
+						a(href='', data-toggle='modal', data-target='#futbol')
 							img(src='images/icons/futbol.png', width='40px')
 							span FÚTBOL
 
 					div.fixture-content
-						a(href='', style='', data-toggle='modal', data-target='#voley')
+						a(href='', data-toggle='modal', data-target='#voley')
+							img(src='images/icons/voley.png', width='40px')
+							span VÓLEY
+
+
+				div.panel-body.fixture-body.show-item(category="EQ" , style="display:none;")
+					div.fixture-content
+						a(href='', data-toggle='modal', data-target='#tabla_ajedrez')
+							img(src='images/icons/ajedrez.png', width='40px')
+							span AJEDREZ
+
+					div.fixture-content
+						a(href='',  data-toggle='modal', data-target='#tabla_basquet')
+							img(src='images/icons/basquet.png', width='40px')
+							span BÁSQUET
+
+					div.fixture-content
+						a(href='', data-toggle='modal', data-target='#tabla_futbol')
+							img(src='images/icons/futbol.png', width='40px')
+							span FÚTBOL
+
+					div.fixture-content
+						a(href='', data-toggle='modal', data-target='#tabla_voley')
 							img(src='images/icons/voley.png', width='40px')
 							span VÓLEY
 				h3.subtitle-h3 Calendario Deportivo
@@ -164,12 +186,126 @@ include partes/header
 <!-- row  calendar -->
 					
 
-<!-- Fin row calendar  -->	
-					
+<!-- MODALES Fixture-->	
+div#video.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Video
+			div.modal-body
+				p.text-center
+					iframe.video.hidden-xs.hidden-sm(width='100%',style="height:400px;" src='https://www.youtube.com/embed/kPTmm9PVl3c', frameborder='0', allowfullscreen='')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close					
 
-	
-<!-- FIN Interfacultades -->
+div#ajedrez.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Ajedrez
+			div.modal-body
+				p.text-center
+					img(src='images/fixture/ajedrezFix.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
 
+div#basquet.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Básquet
+			div.modal-body
+				p.text-center
+					img(src='images/fixture/basquetFix.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+div#futbol.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Fútbol
+			div.modal-body
+				p.text-center
+					img(src='images/fixture/futbolFix.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+div#voley.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Voley
+			div.modal-body
+				p.text-center
+					img(src='images/fixture/voleyFix2.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
+<!-- FIN MODALES FIXTURE -->
+
+<!-- MODALES TABLAS POSICIONES-->	
+div#tabla_ajedrez.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Ajedrez
+			div.modal-body
+				p.text-center
+					img(src='images/posiciones/tabla_ajedrez.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close					
+
+div#tabla_basquet.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Basquet
+			div.modal-body
+				p.text-center
+					img(src='images/posiciones/tabla_basquet.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+div#tabla_futbol.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Futbol
+			div.modal-body
+				p.text-center
+					img(src='images/posiciones/tabla_futbol.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+div#tabla_voley.modal.fade(role='dialog')
+	div.modal-dialog
+		// Modal content
+		div.modal-content(style='background-color: #d8d8d7;')
+			div.modal-header
+				button.close(type='button', data-dismiss='modal') ×
+				h4.modal-title Voley
+			div.modal-body
+				p.text-center
+					img(src='images/posiciones/tabla_voley.jpg', width='100%')
+			div.modal-footer
+				button.btn.btn-default(type='button', data-dismiss='modal') Close
+<!-- FIN MODALES -->
 
 
 	hr.line-dashed
@@ -181,7 +317,14 @@ include partes/redes
 
 <!-- footer -->
 include partes/footer
-
+	script(type='text/javascript', src='js/showContenido.js')
 	script(type='text/javascript', src='js/jquery.calendario.js')
 	script(type='text/javascript', src='js/data.js')
 	script(type='text/javascript', src='js/functionCalendar.js')
+	script.
+		$(document).ready(function() {
+			$(".fixture-sel  a").click(function(){
+				$(".fixture-sel  a").removeClass('selected');
+				$(this).addClass('selected');
+			})
+		});

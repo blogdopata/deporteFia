@@ -62,16 +62,16 @@
     </nav>
   </div>
 </div><!-- FIN  MENU --> 
-<div class="container" style="border:1px solid red;">
+<div class="container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <h2 class="subTitle">Interfacultades		</h2>
     </div>
   </div>
 </div>
-<div class="container" style="border:1px solid red;margin-top:25px;">
+<div class="container" style="margin-top:25px;">
   <div class="row">
-    <div class="col-md-7 col-md-offset-1" style="border:1px solid blue;">
+    <div class="col-md-7 col-md-offset-1">
       <div class="row" style="margin-bottom:20px;">
         <div class="col-md-4"><img class="img-responsive" src="images/noticia1.jpg" alt=""></div>
         <div class="col-md-8">
@@ -83,7 +83,7 @@
       </div>
       <hr style="border:1px solid #A29FA1;">
       <div class="row" style="margin-bottom:20px;">
-        <div class="col-md-4"><img class="img-responsive" src="images/noticia1.jpg" alt=""></div>
+        <div class="col-md-4"><img class="img-responsive" src="images/noticia2.jpg" alt=""></div>
         <div class="col-md-8">
           <h4 class="h4-title">INAUGURACIÓN DEL INTERFACULTADES 2017</h4>
           <p>El pasado sabádo 14 de noviembre se realizó con éxito la Inauguración del Interfacultades El inicio de este evento estuvo acompañado de un gran desfile con todos equipos de las distintas disciplinas de cada facultad.</p><a class="linkN">Ver más información >></a>
@@ -91,7 +91,7 @@
       </div>
       <hr style="border:1px solid #A29FA1;">
       <div class="row" style="margin-bottom:20px;">
-        <div class="col-md-4"><img class="img-responsive" src="images/noticia1.jpg" alt=""></div>
+        <div class="col-md-4"><img class="img-responsive" src="images/noticia3.jpg" alt=""></div>
         <div class="col-md-8">
           <h4 class="h4-title">EE.GG VS FIA</h4>
           <p>Estudios Generales y la facultad de Ingeniería y Arquitectura jugaron el partido inaugural de este evento deportivo, siendo la FIA el equipo goleador de la primera fecha.</p><a class="linkN">Ver más información >></a>
@@ -104,14 +104,20 @@
         <hr class="line-multi">
         <div class="multimedia-content"><a href="#"><img src="images/icons/resultados.png" alt="resul pic"><span>Resultados</span></a></div>
         <hr class="line-multi">
-        <div class="multimedia-content"><a href="#"><img src="images/icons/camara.png" alt="camara pic"><span>Videos (1)</span></a></div>
+        <div class="multimedia-content"><a href="#" data-toggle="modal" data-target="#video"><img src="images/icons/camara.png" alt="camara pic"><span>Videos (1)</span></a></div>
       </div>
-      <div class="fixture-sel"><a class="tabla-pos" href="#">TABLA DE <br> POSICIONES </a><a class="tabla-prox" href="#">PRÓXIMOS  <br> RESULTADOS</a></div>
-      <div class="panel-body fixture-body">
+      <div class="fixture-sel"><a class="tabla-pos category_item selected" category="QS">TABLA DE <br> POSICIONES </a><a class="tabla-prox category_item selected" category="EQ">PRÓXIMOS  <br> RESULTADOS</a></div>
+      <div class="panel-body fixture-body show-item" category="QS">
         <div class="fixture-content"><a href="" data-toggle="modal" data-target="#ajedrez"><img src="images/icons/ajedrez.png" width="40px"><span>AJEDREZ</span></a></div>
         <div class="fixture-content"><a href="" data-toggle="modal" data-target="#basquet"><img src="images/icons/basquet.png" width="40px"><span>BÁSQUET</span></a></div>
         <div class="fixture-content"><a href="" data-toggle="modal" data-target="#futbol"><img src="images/icons/futbol.png" width="40px"><span>FÚTBOL</span></a></div>
         <div class="fixture-content"><a href="" data-toggle="modal" data-target="#voley"><img src="images/icons/voley.png" width="40px"><span>VÓLEY</span></a></div>
+      </div>
+      <div class="panel-body fixture-body show-item" category="EQ" style="display:none;">
+        <div class="fixture-content"><a href="" data-toggle="modal" data-target="#tabla_ajedrez"><img src="images/icons/ajedrez.png" width="40px"><span>AJEDREZ</span></a></div>
+        <div class="fixture-content"><a href="" data-toggle="modal" data-target="#tabla_basquet"><img src="images/icons/basquet.png" width="40px"><span>BÁSQUET</span></a></div>
+        <div class="fixture-content"><a href="" data-toggle="modal" data-target="#tabla_futbol"><img src="images/icons/futbol.png" width="40px"><span>FÚTBOL</span></a></div>
+        <div class="fixture-content"><a href="" data-toggle="modal" data-target="#tabla_voley"><img src="images/icons/voley.png" width="40px"><span>VÓLEY</span></a></div>
       </div>
       <h3 class="subtitle-h3">Calendario Deportivo</h3>
       <div class="container-two">
@@ -130,8 +136,163 @@
     </div>
   </div>
 </div><!-- row  calendar -->
-<!-- Fin row calendar  -->	
-<!-- FIN Interfacultades -->
+<!-- MODALES Fixture-->	
+<div class="modal fade" id="video" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Video</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">
+          <iframe class="video hidden-xs hidden-sm" width="100%" style="height:400px;" src="https://www.youtube.com/embed/kPTmm9PVl3c" frameborder="0" allowfullscreen=""></iframe>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close					</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ajedrez" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Ajedrez</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/fixture/ajedrezFix.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="basquet" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Básquet</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/fixture/basquetFix.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="futbol" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Fútbol</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/fixture/futbolFix.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="voley" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Voley</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/fixture/voleyFix2.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><!-- FIN MODALES FIXTURE -->
+<!-- MODALES TABLAS POSICIONES-->	
+<div class="modal fade" id="tabla_ajedrez" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Ajedrez</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/posiciones/tabla_ajedrez.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close					</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="tabla_basquet" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Basquet</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/posiciones/tabla_basquet.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="tabla_futbol" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Futbol</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/posiciones/tabla_futbol.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="tabla_voley" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #d8d8d7;">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Voley</h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><img src="images/posiciones/tabla_voley.jpg" width="100%"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div><!-- FIN MODALES -->
 <hr class="line-dashed"><!-- Redes-->
 <section class="container">
   <div class="row">
@@ -153,9 +314,18 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3"> 
       <p class="footer--texto">Universidad de San Martín de Porres - Todos los Derechos Reservados
+        <script type="text/javascript" src="js/showContenido.js"></script>
         <script type="text/javascript" src="js/jquery.calendario.js"></script>
         <script type="text/javascript" src="js/data.js"></script>
         <script type="text/javascript" src="js/functionCalendar.js"></script>
+        <script>
+          $(document).ready(function() {
+          	$(".fixture-sel  a").click(function(){
+          		$(".fixture-sel  a").removeClass('selected');
+          		$(this).addClass('selected');
+          	})
+          });
+        </script>
       </p>
     </div>
   </div>
