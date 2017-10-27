@@ -41,7 +41,7 @@ include partes/header
 						ul.nav.navbar-nav
 							li: a(href='./nosotros.html') NOSOTROS
 							
-							li: a(href='./interfacultades.html') INTERFACULTADES
+							li(style="background-color:#76142E;"): a(href='./interfacultades.html') INTERFACULTADES
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| LIGAS 
@@ -127,31 +127,9 @@ include partes/header
 				
 				div.fixture-sel
 					a.tabla-pos.category_item.selected(category="QS") TABLA DE <br> POSICIONES 
-					a.tabla-prox.category_item.selected(category="EQ") PRÓXIMOS  <br> RESULTADOS
+					a.tabla-prox.category_item.selected(category="EQ") PRÓXIMOS  <br> PARTIDOS
 
 				div.panel-body.fixture-body.show-item(category="QS")
-					div.fixture-content
-						a(href='', data-toggle='modal', data-target='#ajedrez')
-							img(src='images/icons/ajedrez.png', width='40px')
-							span AJEDREZ
-
-					div.fixture-content
-						a(href='',  data-toggle='modal', data-target='#basquet')
-							img(src='images/icons/basquet.png', width='40px')
-							span BÁSQUET
-
-					div.fixture-content
-						a(href='', data-toggle='modal', data-target='#futbol')
-							img(src='images/icons/futbol.png', width='40px')
-							span FÚTBOL
-
-					div.fixture-content
-						a(href='', data-toggle='modal', data-target='#voley')
-							img(src='images/icons/voley.png', width='40px')
-							span VÓLEY
-
-
-				div.panel-body.fixture-body.show-item(category="EQ" , style="display:none;")
 					div.fixture-content
 						a(href='', data-toggle='modal', data-target='#tabla_ajedrez')
 							img(src='images/icons/ajedrez.png', width='40px')
@@ -169,6 +147,28 @@ include partes/header
 
 					div.fixture-content
 						a(href='', data-toggle='modal', data-target='#tabla_voley')
+							img(src='images/icons/voley.png', width='40px')
+							span VÓLEY
+
+
+				div.panel-body.fixture-body.show-item(category="EQ" , style="display:none;")
+					div.fixture-content
+						a(href='', data-toggle='modal', data-target='#ajedrez')
+							img(src='images/icons/ajedrez.png', width='40px')
+							span AJEDREZ
+
+					div.fixture-content
+						a(href='',  data-toggle='modal', data-target='#basquet')
+							img(src='images/icons/basquet.png', width='40px')
+							span BÁSQUET
+
+					div.fixture-content
+						a(href='', data-toggle='modal', data-target='#futbol')
+							img(src='images/icons/futbol.png', width='40px')
+							span FÚTBOL
+
+					div.fixture-content
+						a(href='', data-toggle='modal', data-target='#voley')
 							img(src='images/icons/voley.png', width='40px')
 							span VÓLEY
 				h3.subtitle-h3 Calendario Deportivo
@@ -190,18 +190,18 @@ include partes/header
 div#video.modal.fade(role='dialog')
 	div.modal-dialog
 		// Modal content
-		div.modal-content(style='background-color: #d8d8d7;')
+		div.modal-content
 			div.modal-header
 				button.close(type='button', data-dismiss='modal') ×
 				h4.modal-title Video
 			div.modal-body
 				p.text-center
-					iframe.video.hidden-xs.hidden-sm(width='100%',style="height:400px;" src='https://www.youtube.com/embed/kPTmm9PVl3c', frameborder='0', allowfullscreen='')
+					iframe.video(width='100%',style="height:400px;" src='https://www.youtube.com/embed/kPTmm9PVl3c', frameborder='0', allowfullscreen='')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close					
 
-div#ajedrez.modal.fade(role='dialog')
-	div.modal-dialog
+div#ajedrez.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header
@@ -213,8 +213,8 @@ div#ajedrez.modal.fade(role='dialog')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close
 
-div#basquet.modal.fade(role='dialog')
-	div.modal-dialog
+div#basquet.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header
@@ -226,8 +226,8 @@ div#basquet.modal.fade(role='dialog')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close
 
-div#futbol.modal.fade(role='dialog')
-	div.modal-dialog
+div#futbol.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header
@@ -239,8 +239,8 @@ div#futbol.modal.fade(role='dialog')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close
 
-div#voley.modal.fade(role='dialog')
-	div.modal-dialog
+div#voley.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header
@@ -248,14 +248,14 @@ div#voley.modal.fade(role='dialog')
 				h4.modal-title Voley
 			div.modal-body
 				p.text-center
-					img(src='images/fixture/voleyFix2.jpg', width='100%')
+					img(src='images/fixture/voleyFix.jpg', width='100%')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close
 <!-- FIN MODALES FIXTURE -->
 
 <!-- MODALES TABLAS POSICIONES-->	
-div#tabla_ajedrez.modal.fade(role='dialog')
-	div.modal-dialog
+div#tabla_ajedrez.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header
@@ -267,8 +267,8 @@ div#tabla_ajedrez.modal.fade(role='dialog')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close					
 
-div#tabla_basquet.modal.fade(role='dialog')
-	div.modal-dialog
+div#tabla_basquet.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header
@@ -280,8 +280,8 @@ div#tabla_basquet.modal.fade(role='dialog')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close
 
-div#tabla_futbol.modal.fade(role='dialog')
-	div.modal-dialog
+div#tabla_futbol.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header
@@ -293,8 +293,8 @@ div#tabla_futbol.modal.fade(role='dialog')
 			div.modal-footer
 				button.btn.btn-default(type='button', data-dismiss='modal') Close
 
-div#tabla_voley.modal.fade(role='dialog')
-	div.modal-dialog
+div#tabla_voley.modal.fade.bs-example-modal-lg(role='dialog')
+	div.modal-dialog.modal-lg
 		// Modal content
 		div.modal-content(style='background-color: #d8d8d7;')
 			div.modal-header

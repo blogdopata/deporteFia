@@ -39,7 +39,7 @@ include partes/header
 							span.icon-bar
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
-							li: a(href='./nosotros.html') NOSOTROS
+							li(style="background-color:#76142E;"): a(href='./nosotros.html') NOSOTROS
 							
 							li: a(href='./interfacultades.html') INTERFACULTADES
 							li.dropdown
@@ -66,11 +66,12 @@ include partes/header
 <!-- SLIDER -->
 
 	.container-fluid
-			.row
-				.col-md-12.fix-image--container
-					img.img-responsive.fix-image(src='images/portada-nosotros.jpg')
+		.row
+			.col-md-12.fix-image--container
+				img.img-responsive.fix-image(src='images/pic1-a.jpg')
 
-	img.line-color(src="images/linea_colores.png", alt="Line of Colors")
+	div.container-frase
+		h2.text-frase “Amamos lo que hacemos, amamos los deportes”.
 
 <!-- FIN SLIDER -->	
 
@@ -147,15 +148,14 @@ include partes/header
 							span.glyphicon.glyphicon-chevron-right
 							|  Equipo
 
-				h2.title-h2--der Últimas Noticias
+				h2.title-h2--der ÚLTIMAS NOTICIAS
 				div.noticias-general
-					p
-						strong Inauguración Interfacultades:
-						| 
-						br
-						| - Sábado 14 de Octubre  
+					p Segunda fecha de los juegos deportivos  
+					p Primera fecha de los Juegos Deportivos
+					p Partido Inaugual de los Juegos Deportivos
+					p Inauguración de los Juegos Deportivos
 					 
-				iframe.video(width='100%',style="height:188px", src='https://www.youtube.com/embed/AUj-PEWAGIw', frameborder='0', allowfullscreen='')
+				
 				
 				h3.subtitle-h3 Calendario Deportivo
 				

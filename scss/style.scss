@@ -162,7 +162,7 @@ span.separate {
 	}*/
 }
 .hr-nosotros{
-	border:4px solid #49C1BC;
+	border:4px solid #981A36;
 	margin-top:45px;
 }
 .textoG{
@@ -173,7 +173,11 @@ span.separate {
 }
 .noticias-general{
 	background-color: #D2DBDA;
-	padding: 	15px;
+	padding: 	15px 40px;
+	p{
+		text-align:justify;
+		font-size:18px;
+	}
 }
 .subtitle-h2{
 	padding:15px 15px 10px 15px;
@@ -210,12 +214,12 @@ ul.valores{
 
 }	
 .title-h2--der{
-	background-color: #E89C3C;
+	background-color: #2D2829;
 	color: white;
 	text-align:center;
-	padding:10px 0;
+	padding:15px 0;
 	font-style:bold;
-	font-size:22px;
+	font-size:18px;
 	margin-bottom: 0px ;
 }
 h3.subtitle-h3{
