@@ -43,8 +43,16 @@ include partes/header
 									| LIGAS 
 									span.caret
 								ul.dropdown-menu
-									li: a(href='#') Profesionales
+									li.dropdown-submenu
+										a.dropdown-toggle.fixA(href='#', data-toggle='dropdown') Profesionales
+										ul.dropdown-menu
+											li
+												a(href='http://www.clubdeportivo.usmp.edu.pe/' , target="_blank") Club de Fútbol
+											li
+												a(href='https://www.facebook.com/USMPVoleibol/' target="_blank") Club de Vóley
+
 									li: a(href='#') Universitarios
+
 							li.dropdown
 								a.dropdown-toggle.active(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
 									| EVENTOS 
